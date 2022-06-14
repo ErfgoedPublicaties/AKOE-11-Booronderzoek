@@ -1,4 +1,4 @@
-# Welkom {.unnumbered}
+# Welkom! {.unnumbered}
 
 ## Woord vooraf
 
