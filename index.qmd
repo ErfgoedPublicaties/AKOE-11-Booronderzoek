@@ -1,0 +1,17 @@
+# Welkom {.unnumbered}
+
+## Woord vooraf
+
+Welkom bij de online versie van **Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen**. Deze handleiding werd in 2022 gepubliceerd door het agentschap Onroerend Erfgoed en is als pdf te downloaden op de [**Open Archives Repository (OAR)**](https://oar.onroerenderfgoed.be/item/6402).
+
+Met deze online versie willen we kleine aanpassingen aan de originele uitgave, veranderende inzichten en nieuwe toepassingen binnen het vooronderzoek naar artefactensites uit de steentijd - op basis van recente, wetenschappelijke ontwikkelingen - sneller ontsluiten. De basis van deze handleiding blijft de originele uitgave, maar hier kan je steeds de meest actuele versie raadplegen.
+
+## Citeren
+
+Gelieve te citeren als: <br/>
+
+Van Gils M. & Meylemans E. (`r Sys.Date()`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Handleiding agentschap Onroerend Erfgoed, Brussel. <https://hanecakr.github.io/handleidingBooronderzoek/>
+
+Oorspronkelijke gepubliceerd als: <br/>
+
+Van Gils M. & Meylemans E. (`r Sys.Date()`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Handleiding agentschap Onroerend Erfgoed, Brussel [doi: https://doi.org/10.55465/SRER8557/](https://doi.org/10.55465/SRER8557/).

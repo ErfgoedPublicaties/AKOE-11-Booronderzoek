@@ -1,0 +1,50 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  echo: false
+
+book:
+  title: "Handleiding booronderzoek"
+  author: 
+    - Erwin Meylemans [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7544-0794) 
+    - Marijn Van Gils [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7516-1189)
+  description: | 
+    Online versie van de handleiding 'Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen', een handleidng van het agentschap Onroerend Erfgoed".
+  date: 14/06/2022
+  cover-image: media/cover.png
+  sharing: [twitter, facebook, linkedin]
+  repo-url: https://github.com/hanecakr/handleidingBooronderzoek/
+  repo-actions: [edit]
+  chapters:
+    - index.qmd
+    - updates.qmd
+    - 01_inleiding.qmd
+    - 02_bureauonderzoek.qmd
+    - 03_landschappelijk.qmd
+    - 04_prospectie.qmd
+    - 05_waardering.qmd
+    - 06_fasering.qmd
+    - 07_besluit.qmd
+    - literatuur.qmd
+
+crossref:
+  fig-title: Figuur
+  fig-prefix: fig.
+  
+language:
+  toc-title-document: "Op deze pagina"
+  search-no-results-text: "Geen resultaat"
+  repo-action-links-edit: "Bewerk deze pagina"
+# bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    cover-image: figuren/cover.png
+
+sidebar:
+  collapse-level: 4
+
+editor: visual
