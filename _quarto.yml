@@ -13,10 +13,13 @@ book:
   description: | 
     Online versie van de handleiding 'Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen', een handleidng van het agentschap Onroerend Erfgoed".
   date: 14/06/2022
-  cover-image: media/cover.png
+  cover-image: figuren/cover.png
+  toc-depth: 4
   sharing: [twitter, facebook, linkedin]
   repo-url: https://github.com/hanecakr/handleidingBooronderzoek/
   repo-actions: [edit]
+  google-analytics:
+   tracking-id: "G-WFNTWBH9Q4"
   chapters:
     - index.qmd
     - updates.qmd
@@ -29,6 +32,7 @@ book:
     - 07_besluit.qmd
     - literatuur.qmd
 
+    
 crossref:
   fig-title: Figuur
   fig-prefix: fig.
