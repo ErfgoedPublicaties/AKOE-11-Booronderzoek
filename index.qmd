@@ -10,8 +10,8 @@ Met deze online versie willen we kleine aanpassingen aan de originele uitgave, v
 
 Gelieve te citeren als: <br/>
 
-Van Gils M. & Meylemans E. (`r Sys.Date()`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Handleiding agentschap Onroerend Erfgoed, Brussel. <https://hanecakr.github.io/handleidingBooronderzoek/>
+Van Gils M. & Meylemans E. (`r Sys.Date()`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Afwegingskaders agentschap Onroerend Erfgoed, Brussel. <https://hanecakr.github.io/handleidingBooronderzoek/>
 
 Oorspronkelijke gepubliceerd als: <br/>
 
-Van Gils M. & Meylemans E. (`r Sys.Date()`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Handleiding agentschap Onroerend Erfgoed, Brussel [doi: https://doi.org/10.55465/SRER8557/](https://doi.org/10.55465/SRER8557/).
+Van Gils M. & Meylemans E. (2022). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Afwegingskaders agentschap Onroerend Erfgoed 11, Brussel. [doi: https://doi.org/10.55465/SRER8557](https://id.erfgoed.net/infocat/publicaties/6402).
