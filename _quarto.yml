@@ -44,7 +44,12 @@ language:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: 
+        - cosmo
+        - mycss.css
+      dark: 
+        - slate
+        - mycss.css
     cover-image: figuren/cover.png
     toc-depth: 4
-
