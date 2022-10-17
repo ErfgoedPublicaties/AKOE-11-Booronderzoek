@@ -266,7 +266,7 @@ Code van goede praktijk voor de uitvoering van en rapportering over archeologisc
 
 [Kasse C.]{.smallcaps} 1999: *Late Pleniglacial and Lateglacial aeolian phases in The Netherlands*. In: [Schirmer W]{.smallcaps}. (red.): Dunes and fossil soils, GeoArchaeoRhein 3, Münster, 61-82.
 
-[Kasse C.]{.smallcaps} 2002: Sandy aeolian deposits and environments and their relation to climate during the Last Glacial Maximum and Lateglacial in northwest and central Europe, [*Progress in Physical Geography*](https://www.researchgate.net/journal/Progress-in-Physical-Geography-0309-1333) 26/4, 507-532.
+[Kasse C.]{.smallcaps} 2002: *Sandy aeolian deposits and environments and their relation to climate during the Last Glacial Maximum and Lateglacial in northwest and central Europe*, Progress in Physical Geography 26/4, 507-532. <https://doi.org/10.1191/0309133302pp350ra>
 
 [Kiden P]{.smallcaps}. 1991: The Late-glacial and Holocene evolution of the Middle and Lower River Scheldt, Belgium. In: [Starkel L., Gregory K.J. & Thornes J.B.]{.smallcaps} (red.), *Temperate Palaeohydrology,* London, 283-299.
 
@@ -284,7 +284,7 @@ Code van goede praktijk voor de uitvoering van en rapportering over archeologisc
 
 [Koster E.A. 2010:]{.smallcaps} *Origin and development of Late Holocene drift sands: geomorphology and sediment attributes.* In: [Fanta J. & Siepel H]{.smallcaps}. (red): Inland Drift Sand Landscapes. Origins and Soil Development; Dynamics and Management, s.l., 25-48[.]{.smallcaps}
 
-[[Kushner G.]{.smallcaps} 1970: A Consideration of Some Processual Designs for Archaeology as Anthropology](http://www.jstor.org/stable/278141)~,~ *American Antiquity* 35/2, 125-132.
+[Kushner G.]{.smallcaps} 1970: A consideration of some processual designs for archaeology as anthropology, *American Antiquity* 35/2, 125-132. <https://doi.org/10.2307/278141>
 
 [Lascaris M. A.]{.smallcaps} (red.) 2019: *Archeologie en verstoring door bodembewerkingen Evaluatie van de efecten van grondbewerking in agrarisch en stedelijk gebied en het onderzoek daarnaar*, Rapportage Archeologische Monumentenzorg 257, Amersfoort. <https://www.cultureelerfgoed.nl/onderwerpen/bodemverstoring/documenten/publicaties/2019/01/01/archeologie-en-verstoring-door-bodembewerkingen>
 

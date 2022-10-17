@@ -38,10 +38,13 @@ Om dezelfde reden kan je een **artefactconcentratie NIET afbakenen** met boringe
 ::: {#fig-5-1}
 ![](./figuren/fig-5-1.png)
 
-Twee slechte voorbeelden van waarderingsonderzoek: het 'bevestigen' van positieve boorlocaties onderzoek door: - er één of twee boringen langs te plaatsen (links); - het grid alleen lokaal te verdichten tot een krans van boringen (rechts).
+Twee slechte voorbeelden van waarderingsonderzoek: het 'bevestigen' van positieve boorlocaties onderzoek door: 
+<br> - er één of twee boringen langs te plaatsen (links); 
+<br>- het grid alleen lokaal te verdichten tot een krans van boringen (rechts). 
+<br>
+<br> Sommige 'waarderende' boringen zijn positief en andere niet, maar deze resultaten zeggen niets over de aan- of afwezigheid van een artefactconcentratie. Deze technieken werken niet om de waarde van positieve boringen te bepalen.
 :::
 
-Sommige 'waarderende' boringen zijn positief en andere niet, maar deze resultaten zeggen niets over de aan- of afwezigheid van een artefactconcentratie. Deze technieken werken niet om de waarde van positieve boringen te bepalen.
 
 
 ### Proefputten in functie van steentijd artefactensites
@@ -63,10 +66,16 @@ Opgraven met de 3D-methode biedt een nog hogere graad van detail, want je brengt
 ::: {#fig-5-2}
 ![](./figuren/image216.jpeg)
 
-Een visuele vergelijking van de oppervlaktes die worden onderzocht door verschillende formaten van proefputten en diameters van boringen: - proefput van 1 bij 1 m: 1 m² - proefput van 0,5 bij 0,5 m: 0,25 m² - boring van 15 cm: 0, 018 m² - boring van 10 cm: 0,008 m²
+Een visuele vergelijking van de oppervlaktes die worden onderzocht door verschillende formaten van proefputten en diameters van boringen: 
+<br>- proefput van 1 bij 1 m: 1 m² 
+<br>- proefput van 0,5 bij 0,5 m: 0,25 m² 
+<br>- boring van 15 cm: 0, 018 m² 
+<br>- boring van 10 cm: 0,008 m². 
+<br>
+<br>Het aantal vondsten dat door elke oppervlakte wordt gevat verduidelijkt de mogelijkheden van proefputten tegenover boringen voor het bepalen van de aanwezige densiteit aan artefacten.
 :::
 
-Het aantal vondsten dat door elke oppervlakte wordt gevat verduidelijkt de mogelijkheden van proefputten tegenover boringen voor het bepalen van de aanwezige densiteit aan artefacten.
+
 
 ::: {#fig-5-3}
 ![](./figuren/image217.jpeg)

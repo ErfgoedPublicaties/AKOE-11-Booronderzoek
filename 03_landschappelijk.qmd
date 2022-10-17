@@ -242,7 +242,7 @@ Zonder een boring of put te moeten plaatsen, toont deze bestaande wand al dat de
 
 Sonderingen of *cone penetration tests* (CPT) kunnen aanvullend werken op mechanische boringen maar leunen eerder aan bij geofysische technieken. CPT's nemen geen fysiek staal maar **meten mechanische eigenschappen van de bodem**. De puntweerstand en de plaatselijke wrijvingsweerstand van de bodem worden door elektrische druksensoren gemeten terwijl een conus met gelijkmatige snelheid in de bodem wordt gedrukt (CPT-E). Die data kan omgezet worden naar *soil behavior types*, klassen met dezelfde mechanische bodemeigenschappen. Deze klassen kunnen mits validatie door directe sedimentobservaties grofweg aan bodemtextuurklassen worden gerelateerd. Ze laten geen nauwkeurige voorspelling van fysische bodemeigenschappen toe, maar bieden wel een relatief overzichtsbeeld van de bodemopbouw, in het bijzonder in alluviale en estuariene contexten.
 
-De mechanische sensoren kunnen worden aangevuld met of vervangen door andere sensoren. Zo kunnen ook geofysische sensoren (elektrische weerstandsmeters, conductiviteitsmeters, magnetometers, seismometers, ...) in de bodem worden geduwd en eventueel geïnterpreteerd door vergelijking met geofysische metingen aan de oppervlakte. Daarnaast kan ook een camera zijwaarts de bodem filmen terwijl hij erin wordt gedrukt (videoCPT, vis-CPT of OIP). De grootte van deze beelden is beperkt (ca. 1 x 1 cm) maar ze kunnen een waardevolle visuele hulp bieden voor de interpretatie van CPT-E meetgegevens in alluviale en estuariene sedimenten (Fig. 137 en 138). De eerste tests met deze camerabeelden wijzen ook op mogelijke toepassingen in kartering van paleobodems in de zand- en leemstreek.
+De mechanische sensoren kunnen worden aangevuld met of vervangen door andere sensoren. Zo kunnen ook geofysische sensoren (elektrische weerstandsmeters, conductiviteitsmeters, magnetometers, seismometers, ...) in de bodem worden geduwd en eventueel geïnterpreteerd door vergelijking met geofysische metingen aan de oppervlakte. Daarnaast kan ook een camera zijwaarts de bodem filmen terwijl hij erin wordt gedrukt (videoCPT, vis-CPT of OIP). De grootte van deze beelden is beperkt (ca. 1 x 1 cm) maar ze kunnen een waardevolle visuele hulp bieden voor de interpretatie van CPT-E meetgegevens in alluviale en estuariene sedimenten (@fig-3-16 en @fig-3-17). De eerste tests met deze camerabeelden wijzen ook op mogelijke toepassingen in kartering van paleobodems in de zand- en leemstreek.
 
 ::: {#fig-3-16}
 ![](./figuren/image166.jpeg)
@@ -327,8 +327,10 @@ Bij een regelmatige tussenafstand van de boringen kunnen soms bepaalde landschap
 ::: {#fig-3-22}
 ![](./figuren/image173.jpeg)
 
-Door meerdere, bijvoorbeeld haaks op elkaar georiënteerde, transecten te combineren kan je het (paleo)landschap in 3D in kaart brengen. Geofysische sonderingen of vlakdekkende metingen (zie 3.2.3 en 3.2.4) kunnen hierbij aanvullend zijn, om zo een nagenoeg vlakdekkende interpretatie van de ondergrond toe te laten.
+De raaien van een boorgrid vormen in feite transecten. Leg ze dus dwars over hellingen, valleien, enz. om de meest relevante doorsnedes van het gebied te bekomen.
 :::
+
+Door meerdere, bijvoorbeeld haaks op elkaar georiënteerde, transecten te combineren kan je het (paleo)landschap in 3D in kaart brengen. Geofysische sonderingen of vlakdekkende metingen (zie 3.2.3 en 3.2.4) kunnen hierbij aanvullend zijn, om zo een nagenoeg vlakdekkende interpretatie van de ondergrond toe te laten.
 
 Ook wanneer je in een regelmatig grid werkt, kunnen overgangen in het landschap soms onvoldoende worden gevat. Soms heb je bijvoorbeeld een nauwkeurigere afbakening nodig van het voorkomen van een bepaalde laag, of van zones met goede of slechte bodembewaring, dan de resolutie van het grid toelaat. Dit kan je alleen bekomen door enkele extra tussenliggende boringen of putten te plaatsen (zie 3.4). Ook de resultaten van andere observaties, bijvoorbeeld structuren zichtbaar via geofysisch onderzoek, kunnen aanleiding geven tot het uitvoeren van extra boringen of profielputten.
 
@@ -390,5 +392,5 @@ Afbakenen van deelzones is niet in elk onderzoeksgebied mogelijk. Vaak is het te
 ::: {#fig-3-26}
 ![](./figuren/image178.jpeg) 
 
-Een gebied met een sterk lokale variatie tussen goede (groene) en slechte (rode) bodembewaring resulteert in een afwisseling van 'positieve' (groene) en 'negatieve' (rode) boringen/putten, waarin geen duidelijk patroon kan herkend worden. Dit landschappelijk bodemonderzoek levert dus onvoldoende gegevens om deelzone s af te bakenen.
+Een gebied met een sterk lokale variatie tussen goede (groene) en slechte (rode) bodembewaring resulteert in een afwisseling van 'positieve' (groene) en 'negatieve' (rode) boringen/putten, waarin geen duidelijk patroon kan herkend worden. Dit landschappelijk bodemonderzoek levert dus onvoldoende gegevens om deelzones af te bakenen.
 :::

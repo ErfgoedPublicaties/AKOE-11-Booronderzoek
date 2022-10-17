@@ -205,10 +205,10 @@ De boordiameter en de maaswijdte van de zeef moeten onderling in **balans** zijn
 ::: {#fig-4-8}
 ![](./figuren/image187.jpeg)
 
-Een fictief detailbeeld van één boorlocatie. De zwarte driehoeken stellen vondsten voor, de grijze cirkels boringen van verschillende diameters.
+Een fictief detailbeeld van één boorlocatie. De zwarte driehoeken stellen vondsten voor, de grijze cirkels boringen van verschillende diameters. Bredere boren bestrijken een groter oppervlak en verhogen dan ook de vindkans. In de 20 cm boring bevinden zich 8 vondsten, tegenover 2 in de 10 cm boring. Door de onregelmatige spreiding van vondsten is dit principe niet altijd rechtlijnig: de 15 cm boring heeft hier bijvoorbeeld hetzelfde aantal vondsten (4) opgeleverd als de 12 cm boring.
 :::
 
-Bredere boren bestrijken een groter oppervlak en verhogen dan ook de vindkans. In de 20 cm boring bevinden zich 8 vondsten, tegenover 2 in de 10 cm boring. Door de onregelmatige spreiding van vondsten is dit principe niet altijd rechtlijnig: de 15 cm boring heeft hier bijvoorbeeld hetzelfde aantal vondsten (4) opgeleverd als de 12 cm boring.
+
 
 
 #### Toepassing
@@ -237,7 +237,7 @@ Met GPS of Total Station kan je ook eenvoudig perfecte gelijkzijdige driehoeken 
 ::: {#fig-4-10}
 ![](./figuren/image190.jpeg)
 
-FMet GPS kan je een perfect gelijkzijdig boorgrid aanleggen. De tussenafstand tussen raaien is dan eerder abstract; alleen de afstand tussen de boringen is van belang.
+Met GPS kan je een perfect gelijkzijdig boorgrid aanleggen. De tussenafstand tussen raaien is dan eerder abstract; alleen de afstand tussen de boringen is van belang.
 :::
 
 Een gelijkzijdig driehoeksgrid is het efficiëntste patroon om cirkelvormige artefactenclusters te treffen. Met bijvoorbeeld een grid van 5 bij 6 m (340 boringen per ha) tref je elke cirkelvormige concentratie groter dan 6,5 m diameter in principe minstens één keer. Voor een gelijkaardige trefkans zou je in een vierkantsgrid om de 5 m boringen moeten plaatsen, wat resulteert in 400 boorpunten per ha (@fig-4-11). De CGP laat een afwijking van een regelmatig driehoeksgrid daarom enkel toe mits motivatie.
