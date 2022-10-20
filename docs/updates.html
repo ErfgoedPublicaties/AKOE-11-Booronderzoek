@@ -209,7 +209,14 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Op deze pagina</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">1.0.0 (14-06-2022)</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">1.0.1 (20-10-2022)</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/hanecakr/handleidingBooronderzoek/edit/main/updates.qmd" class="toc-action">Bewerk deze pagina</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -219,15 +226,20 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 
 <p>In het overzicht hier onder worden de belangrijkste wijzigingen ten opzichte van <a href="https://oar.onroerenderfgoed.be/item/437">de originele publicatie uit 2022</a> opgesomd in chronologische volgorde.</p>
 <p><br> <br></p>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">1.0.0 (14-06-2022)</h4>
 <ul>
-<li><code>14-06-2022</code>: handleiding <strong><em>Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen</em></strong> online te raadplegen [https://hanecakr.github.io/handleidingBooronderzoek/], zoals gepubliceerd door Marijn Van Gils &amp; Erwin Meylemans in 2022.</li>
+<li>handleiding <strong><em>Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen</em></strong> online te raadplegen <a href="https://hanecakr.github.io/handleidingBooronderzoek/" class="uri">https://hanecakr.github.io/handleidingBooronderzoek/</a>, zoals gepubliceerd door Marijn Van Gils &amp; Erwin Meylemans in 2022.</li>
 </ul>
-<p><br></p>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">1.0.1 (20-10-2022)</h4>
 <ul>
-<li><code>17-10-2022</code>: copy-editing van globale tekst.</li>
+<li>copy-editing van globale tekst.</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -476,6 +488,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">

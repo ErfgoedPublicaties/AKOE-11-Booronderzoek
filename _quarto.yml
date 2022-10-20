@@ -9,17 +9,31 @@ lang: nl
 
 book:
   title: "Afwegingskader booronderzoek"
+  subtitle: "Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen"
+  # description: |
+  #   Online versie van 'Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen'.
+  #   Dit afwegingskader werd in 2022 gepubliceerd door het agentschap Onroerend Erfgoed.
+  #   steentijdonderzoek - methodologie - afwegingskader - archeologie
   author: 
-    - Erwin Meylemans [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7544-0794) 
-    - Marijn Van Gils [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7516-1189)
+    - name: Erwin Meylemans
+      orcid: 0000-0002-7544-0794
+      affiliations: "erfgoedonderzoeker <br> agentschap Onroerend Erfgoed"
+
+    - name: Marijn Van Gils
+      orcid: 0000-0002-7516-1189
+      affiliations: "erfgoedonderzoeker <br> agentschap Onroerend Erfgoed"
+
+  publisher: "agentschap Onroerend Erfgoed"
   date: today
   cover-image: figuren/cover.png
-  # collapse-level: 2
+  # collapse-level: 3
   sharing: [twitter, facebook, linkedin]
   twitter-card:
     image: "/docs/figuren/image217.jpeg"
   repo-url: https://github.com/hanecakr/handleidingBooronderzoek/
   repo-actions: [edit]
+  # sidebar:
+  #   title: "Hoofdstukken"
   google-analytics:
    tracking-id: "G-WFNTWBH9Q4"
   chapters:
@@ -36,7 +50,6 @@ book:
     
 title-block-banner: "#914f9a"
 
-    
 crossref:
   fig-title: Figuur
   fig-prefix: fig.
@@ -50,12 +63,13 @@ language:
 
 format:
   html:
-    theme: 
-      light: 
+    theme:
+      light:
         - cosmo
         - mycss.css
-      dark: 
+      dark:
         - slate
         - mycss.css
     cover-image: figuren/cover.png
     toc-depth: 4
+    link-external-newwindow: true
