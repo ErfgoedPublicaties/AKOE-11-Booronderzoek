@@ -8,9 +8,14 @@ Met deze online versie willen we kleine aanpassingen aan de originele uitgave, v
 
 ## Citeren
 
+```{r eval=F}
+# R chunck toegevoeggd zodat krnitr wordt aangesproken om het document om te zetten naar .md. Indien geen r chunck wordt gedetecteerd, zal het niet als Rmd worden aanzien.
+1+1
+```
+
 Gelieve te citeren als: <br/>
 
-Van Gils M. & Meylemans E. (06-11-2023). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen (v1.0.1). Afwegingskaders agentschap Onroerend Erfgoed, Brussel. <https://publicaties.onroerenderfgoed.be/AKOE-11-Booronderzoek//>
+Van Gils M. & Meylemans E. (`r Sys.Date() |> format("%Y")`). Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen. Afwegingskaders agentschap Onroerend Erfgoed, Brussel. <https://publicaties.onroerenderfgoed.be/AKOE-11-Booronderzoek> (geraadpleegd op `r Sys.Date() |> format("%d-%m-%Y")`)
 
 Oorspronkelijke gepubliceerd als: <br/>
 
