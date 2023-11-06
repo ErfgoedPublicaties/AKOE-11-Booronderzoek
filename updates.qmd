@@ -14,3 +14,9 @@ In het overzicht hier onder worden de belangrijkste wijzigingen ten opzichte van
 #### 1.0.1 (20-10-2022)  
 
 - copy-editing van globale tekst.
+
+
+#### 1.1.0 (06-11-2023)  
+
+- Online versie handleiding overgebracht naar <https://github.com/ErfgoedPublicaties>.
+- Nieuwe URL website: <https://publicaties.onroerenderfgoed.be/AKOE-11-Booronderzoek/>

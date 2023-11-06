@@ -10,10 +10,6 @@ lang: nl
 book:
   title: "Afwegingskader booronderzoek"
   subtitle: "Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen"
-  # description: |
-  #   Online versie van 'Booronderzoeken. Vooronderzoek naar artefactensites uit de steentijd: methodiek en afwegingen'.
-  #   Dit afwegingskader werd in 2022 gepubliceerd door het agentschap Onroerend Erfgoed.
-  #   steentijdonderzoek - methodologie - afwegingskader - archeologie
   author: 
     - name: Erwin Meylemans
       orcid: 0000-0002-7544-0794
@@ -26,14 +22,11 @@ book:
   publisher: "agentschap Onroerend Erfgoed"
   date: today
   cover-image: figuren/cover.png
-  # collapse-level: 3
   sharing: [twitter, facebook, linkedin]
   twitter-card:
     image: "/docs/figuren/image217.jpeg"
-  repo-url: https://github.com/hanecakr/handleidingBooronderzoek/
+  repo-url: https://github.com/ErfgoedPublicaties/AKOE-11-Booronderzoek
   repo-actions: [edit]
-  # sidebar:
-  #   title: "Hoofdstukken"
   google-analytics:
    tracking-id: "G-WFNTWBH9Q4"
   chapters:
@@ -49,6 +42,7 @@ book:
     - literatuur.qmd
     
 title-block-banner: "#914f9a"
+title-block-banner-color: "#FFFFFF"
 
 crossref:
   fig-title: Figuur

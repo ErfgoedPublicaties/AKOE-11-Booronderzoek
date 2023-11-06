@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.215">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -59,7 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "meer overeenkomsten in dit document",
     "search-clear-button-title": "Wissen",
     "search-detached-cancel-button-title": "Annuleren",
-    "search-submit-button-title": "Verzenden"
+    "search-submit-button-title": "Verzenden",
+    "search-label": "Zoeken"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WFNTWBH9Q4"></script>
@@ -72,14 +73,26 @@ gtag('js', new Date());
 gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 </script>
 <style>
-    .quarto-title-block .quarto-title-banner {
-      background: #914f9a;
-    }
-    </style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #FFFFFF;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #FFFFFF;
+background: #914f9a;
+      }
+</style>
 
 
 <meta name="twitter:title" content="Afwegingskader booronderzoek - 4&nbsp; Prospectie">
-<meta name="twitter:description" content="Sensu strictu wil archeologische prospectie in de eerste plaats maar één onderzoeksvraag beantwoorden: is er een archeologische site aanwezig of niet?">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="/docs/figuren/image217.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -88,11 +101,16 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalk in" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_prospectie.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalk in" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -101,7 +119,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></h1>
+      <h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></h1>
                       </div>
   </div>
     
@@ -116,120 +134,133 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Afwegingskader booronderzoek</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/hanecakr/handleidingBooronderzoek/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/ErfgoedPublicaties/AKOE-11-Booronderzoek" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Schakel donkere modus in"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Zoeken"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welkom!</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welkom!</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./updates.html" class="sidebar-item-text sidebar-link">Updates</a>
+  <a href="./updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updates</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_inleiding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></a>
+  <a href="./01_inleiding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_bureauonderzoek.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></a>
+  <a href="./02_bureauonderzoek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_landschappelijk.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Landschappelijk bodemonderzoek</span></a>
+  <a href="./03_landschappelijk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Landschappelijk bodemonderzoek</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_prospectie.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></a>
+  <a href="./04_prospectie.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_waardering.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Waardering</span></a>
+  <a href="./05_waardering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Waardering</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_fasering.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fasering</span></a>
+  <a href="./06_fasering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fasering</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_besluit.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Besluit</span></a>
+  <a href="./07_besluit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Besluit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./literatuur.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literatuur</span></a>
+  <a href="./literatuur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literatuur</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Op deze pagina</h2>
    
   <ul>
-  <li><a href="#inleiding" id="toc-inleiding" class="nav-link active" data-scroll-target="#inleiding"><span class="toc-section-number">4.1</span>  Inleiding</a></li>
-  <li><a href="#technieken" id="toc-technieken" class="nav-link" data-scroll-target="#technieken"><span class="toc-section-number">4.2</span>  Technieken</a>
+  <li><a href="#inleiding" id="toc-inleiding" class="nav-link active" data-scroll-target="#inleiding"><span class="header-section-number">4.1</span> Inleiding</a></li>
+  <li><a href="#technieken" id="toc-technieken" class="nav-link" data-scroll-target="#technieken"><span class="header-section-number">4.2</span> Technieken</a>
   <ul>
-  <li><a href="#veldkartering" id="toc-veldkartering" class="nav-link" data-scroll-target="#veldkartering"><span class="toc-section-number">4.2.1</span>  Veldkartering</a></li>
-  <li><a href="#archeologisch-booronderzoek" id="toc-archeologisch-booronderzoek" class="nav-link" data-scroll-target="#archeologisch-booronderzoek"><span class="toc-section-number">4.2.2</span>  Archeologisch booronderzoek</a>
+  <li><a href="#veldkartering" id="toc-veldkartering" class="nav-link" data-scroll-target="#veldkartering"><span class="header-section-number">4.2.1</span> Veldkartering</a></li>
+  <li><a href="#archeologisch-booronderzoek" id="toc-archeologisch-booronderzoek" class="nav-link" data-scroll-target="#archeologisch-booronderzoek"><span class="header-section-number">4.2.2</span> Archeologisch booronderzoek</a>
   <ul class="collapse">
-  <li><a href="#doel" id="toc-doel" class="nav-link" data-scroll-target="#doel"><span class="toc-section-number">4.2.2.1</span>  Doel</a></li>
-  <li><a href="#basisprincipes" id="toc-basisprincipes" class="nav-link" data-scroll-target="#basisprincipes"><span class="toc-section-number">4.2.2.2</span>  Basisprincipes</a></li>
-  <li><a href="#toepassing" id="toc-toepassing" class="nav-link" data-scroll-target="#toepassing"><span class="toc-section-number">4.2.2.3</span>  Toepassing</a></li>
-  <li><a href="#methode" id="toc-methode" class="nav-link" data-scroll-target="#methode"><span class="toc-section-number">4.2.2.4</span>  Methode</a></li>
-  <li><a href="#presentatie-resultaten" id="toc-presentatie-resultaten" class="nav-link" data-scroll-target="#presentatie-resultaten"><span class="toc-section-number">4.2.2.5</span>  Presentatie resultaten</a></li>
-  <li><a href="#interpretatie-van-de-resultaten" id="toc-interpretatie-van-de-resultaten" class="nav-link" data-scroll-target="#interpretatie-van-de-resultaten"><span class="toc-section-number">4.2.2.6</span>  Interpretatie van de resultaten</a></li>
+  <li><a href="#doel" id="toc-doel" class="nav-link" data-scroll-target="#doel"><span class="header-section-number">4.2.2.1</span> Doel</a></li>
+  <li><a href="#basisprincipes" id="toc-basisprincipes" class="nav-link" data-scroll-target="#basisprincipes"><span class="header-section-number">4.2.2.2</span> Basisprincipes</a></li>
+  <li><a href="#toepassing" id="toc-toepassing" class="nav-link" data-scroll-target="#toepassing"><span class="header-section-number">4.2.2.3</span> Toepassing</a></li>
+  <li><a href="#methode" id="toc-methode" class="nav-link" data-scroll-target="#methode"><span class="header-section-number">4.2.2.4</span> Methode</a></li>
+  <li><a href="#presentatie-resultaten" id="toc-presentatie-resultaten" class="nav-link" data-scroll-target="#presentatie-resultaten"><span class="header-section-number">4.2.2.5</span> Presentatie resultaten</a></li>
+  <li><a href="#interpretatie-van-de-resultaten" id="toc-interpretatie-van-de-resultaten" class="nav-link" data-scroll-target="#interpretatie-van-de-resultaten"><span class="header-section-number">4.2.2.6</span> Interpretatie van de resultaten</a></li>
   </ul></li>
-  <li><a href="#prospectie-met-proefputten" id="toc-prospectie-met-proefputten" class="nav-link" data-scroll-target="#prospectie-met-proefputten"><span class="toc-section-number">4.2.3</span>  Prospectie met proefputten</a></li>
+  <li><a href="#prospectie-met-proefputten" id="toc-prospectie-met-proefputten" class="nav-link" data-scroll-target="#prospectie-met-proefputten"><span class="header-section-number">4.2.3</span> Prospectie met proefputten</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/hanecakr/handleidingBooronderzoek/edit/main/04_prospectie.qmd" class="toc-action">Bewerk deze pagina</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ErfgoedPublicaties/AKOE-11-Booronderzoek/edit/main/04_prospectie.qmd" class="toc-action">Bewerk deze pagina</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -304,13 +335,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image179.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.1: Vier vuurstenen artefacten, afkomstig uit één boring. Dit oogt misschien weinig spectaculair, maar deze boring leverde meer en duidelijkere indicatoren dan je in de gemiddelde positieve boring kan verwachten.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.1: Vier vuurstenen artefacten, afkomstig uit één boring. Dit oogt misschien weinig spectaculair, maar deze boring leverde meer en duidelijkere indicatoren dan je in de gemiddelde positieve boring kan verwachten.</figcaption>
 </figure>
 </div>
 <div id="fig-4-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.2: Twee voorbeelden van grootteverdeling bij lithische ensembles<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Bemerk hoe de fijnste maaswijdten duidelijk de grootste delen van de ensembles opleverden. <strong>EXP</strong>: de gemiddelde grootteverdeling van 43 experimenten van lithische productie. <strong>DDD C3</strong>: de grootteverdeling van een echt archeologisch ensemble: de vroegmesolithische vondstconcentratie C3 van de in 2003 opgegraven vindplaats Doel Deurganckdok sector J/L.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.2: Twee voorbeelden van grootteverdeling bij lithische ensembles<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Bemerk hoe de fijnste maaswijdten duidelijk de grootste delen van de ensembles opleverden. <strong>EXP</strong>: de gemiddelde grootteverdeling van 43 experimenten van lithische productie. <strong>DDD C3</strong>: de grootteverdeling van een echt archeologisch ensemble: de vroegmesolithische vondstconcentratie C3 van de in 2003 opgegraven vindplaats Doel Deurganckdok sector J/L.</figcaption>
 </figure>
 </div>
 <p>Fragmenten aardewerk in ‘prehistorische techniek’ (handgevormd) kunnen ook een aanwijzing zijn voor de aanwezigheid van een artefactensite. In Vlaanderen werd aardewerk in jager-verzamelaarscontext voor het eerst geproduceerd vanaf het finaalmesolithicum, en wordt meestal geassocieerd met de <em>Swifterbant</em>cultuur.</p>
@@ -333,7 +364,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image181.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.3: De horizontale vondstspreiding van sector 5 te Weelde Paardsdrank toont een ‘klassieke’ concentratie<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.3: De horizontale vondstspreiding van sector 5 te Weelde Paardsdrank toont een ‘klassieke’ concentratie<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -344,7 +375,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-4.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.4: Zelfs een 20 cm boor in een grid van 5 bij 6 m bemonstert slechts 0,105 % (1/1000!)van de totale oppervlakte. Bij boringen met een diameter van 10 cm in een grid van 10 bij 12 m, het minimum volgens de CGP, valt dit terug tot slechts 0,007 %.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.4: Zelfs een 20 cm boor in een grid van 5 bij 6 m bemonstert slechts 0,105 % (1/1000!)van de totale oppervlakte. Bij boringen met een diameter van 10 cm in een grid van 10 bij 12 m, het minimum volgens de CGP, valt dit terug tot slechts 0,007 %.</figcaption>
 </figure>
 </div>
 </section>
@@ -363,21 +394,21 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-5.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.5: De zwarte punten stellen boringen voor, de grijze cirkels vondstconcentraties. <strong>Links</strong>: een relatief breed boorgrid treft slechts één van de vier aanwezige artefactconcentraties. <strong>Rechts</strong>: een verfijning van het boorgrid zorgt voor een hogere trefkans: Drie van de vier aanwezige concentraties worden getroffen. Twee van hen worden zelfs meermaals aangeboord.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.5: De zwarte punten stellen boringen voor, de grijze cirkels vondstconcentraties. <strong>Links</strong>: een relatief breed boorgrid treft slechts één van de vier aanwezige artefactconcentraties. <strong>Rechts</strong>: een verfijning van het boorgrid zorgt voor een hogere trefkans: Drie van de vier aanwezige concentraties worden getroffen. Twee van hen worden zelfs meermaals aangeboord.</figcaption>
 </figure>
 </div>
 <p>Voor sites met meerdere artefactconcentraties speelt ook de absolute grootte van het onderzoeksgebied een rol. Hoe groter de onderzochte zone binnen een dergelijke site, hoe meer boringen erin worden geplaatst en hoe meer concentraties aanwezig kunnen zijn, en dus hoe groter de kans dat minstens één concentratie wordt getroffen (<a href="#fig-4-6">fig.&nbsp;<span>4.6</span></a>).</p>
 <div id="fig-4-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image185.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.6: In het grotere onderzoeksgebied A worden meer boringen uitgevoerd dan in het kleinere gebied B. Het bevat bovendien meer artefactconcentraties. Dit leidt tot een hogere trefkans: in A worden twee van de vier concentraties getroffen, terwijl de anderhalve concentratie in B onopgemerkt blijft.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.6: In het grotere onderzoeksgebied A worden meer boringen uitgevoerd dan in het kleinere gebied B. Het bevat bovendien meer artefactconcentraties. Dit leidt tot een hogere trefkans: in A worden twee van de vier concentraties getroffen, terwijl de anderhalve concentratie in B onopgemerkt blijft.</figcaption>
 </figure>
 </div>
 <p>Artefactconcentraties die aan de rand van of slechts gedeeltelijk in een studiegebied liggen kan je gemakkelijker missen omdat deze niet volledig door het boorgrid omvat worden. Dit is het zogenaamde <strong>grenseffect</strong> op de trefkans. Dit effect wordt sterker bij een langwerpiger en dus smaller onderzoeksgebied (<a href="#fig-4-7">fig.&nbsp;<span>4.7</span></a>).</p>
 <div id="fig-4-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image186.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.7: Grenseffect: de boringen binnen het onderzoekgebied (zwarte punten) missen de concentraties aan de grenzen, terwijl een verderzetting van het grid buiten het onderzoeksgebied (witte punten) deze wel zouden treffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.7: Grenseffect: de boringen binnen het onderzoekgebied (zwarte punten) missen de concentraties aan de grenzen, terwijl een verderzetting van het grid buiten het onderzoeksgebied (witte punten) deze wel zouden treffen.</figcaption>
 </figure>
 </div>
 </section>
@@ -392,7 +423,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image187.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.8: Een fictief detailbeeld van één boorlocatie. De zwarte driehoeken stellen vondsten voor, de grijze cirkels boringen van verschillende diameters. Bredere boren bestrijken een groter oppervlak en verhogen dan ook de vindkans. In de 20 cm boring bevinden zich 8 vondsten, tegenover 2 in de 10 cm boring. Door de onregelmatige spreiding van vondsten is dit principe niet altijd rechtlijnig: de 15 cm boring heeft hier bijvoorbeeld hetzelfde aantal vondsten (4) opgeleverd als de 12 cm boring.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.8: Een fictief detailbeeld van één boorlocatie. De zwarte driehoeken stellen vondsten voor, de grijze cirkels boringen van verschillende diameters. Bredere boren bestrijken een groter oppervlak en verhogen dan ook de vindkans. In de 20 cm boring bevinden zich 8 vondsten, tegenover 2 in de 10 cm boring. Door de onregelmatige spreiding van vondsten is dit principe niet altijd rechtlijnig: de 15 cm boring heeft hier bijvoorbeeld hetzelfde aantal vondsten (4) opgeleverd als de 12 cm boring.</figcaption>
 </figure>
 </div>
 </section>
@@ -411,21 +442,21 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-9.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.9: <strong>Links</strong> wordt een driehoeksgrid conform de CGP weergegeven, in dit geval van 5 bij 6 m. De afstand tussen de boorraaien (= grijze streepjeslijnen) bedraagt 5 m en tussen de boorpunten op een raai 6 m. De afstanden tussen de boorpunten verschilt maar weinig en het grid benadert de gelijkzijdigheid. <strong>Rechts</strong> toont een raaiafstand van 6 m met boringen om de 5 m, wat niet conform de CGP is. Dit grid is duidelijk gelijkbenig, met een veel ongelijkere afstand tussen de boorpunten.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.9: <strong>Links</strong> wordt een driehoeksgrid conform de CGP weergegeven, in dit geval van 5 bij 6 m. De afstand tussen de boorraaien (= grijze streepjeslijnen) bedraagt 5 m en tussen de boorpunten op een raai 6 m. De afstanden tussen de boorpunten verschilt maar weinig en het grid benadert de gelijkzijdigheid. <strong>Rechts</strong> toont een raaiafstand van 6 m met boringen om de 5 m, wat niet conform de CGP is. Dit grid is duidelijk gelijkbenig, met een veel ongelijkere afstand tussen de boorpunten.</figcaption>
 </figure>
 </div>
 <p>Met GPS of Total Station kan je ook eenvoudig perfecte gelijkzijdige driehoeken op het terrein uitzetten. Op die manier wordt soms in een grid met gelijkzijdige driehoeken van 5 x 5 x 5 m gewerkt (<a href="#fig-4-10">fig.&nbsp;<span>4.10</span></a>).</p>
 <div id="fig-4-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image190.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.10: Met GPS kan je een perfect gelijkzijdig boorgrid aanleggen. De tussenafstand tussen raaien is dan eerder abstract; alleen de afstand tussen de boringen is van belang.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.10: Met GPS kan je een perfect gelijkzijdig boorgrid aanleggen. De tussenafstand tussen raaien is dan eerder abstract; alleen de afstand tussen de boringen is van belang.</figcaption>
 </figure>
 </div>
 <p>Een gelijkzijdig driehoeksgrid is het efficiëntste patroon om cirkelvormige artefactenclusters te treffen. Met bijvoorbeeld een grid van 5 bij 6 m (340 boringen per ha) tref je elke cirkelvormige concentratie groter dan 6,5 m diameter in principe minstens één keer. Voor een gelijkaardige trefkans zou je in een vierkantsgrid om de 5 m boringen moeten plaatsen, wat resulteert in 400 boorpunten per ha (<a href="#fig-4-11">fig.&nbsp;<span>4.11</span></a>). De CGP laat een afwijking van een regelmatig driehoeksgrid daarom enkel toe mits motivatie.</p>
 <div id="fig-4-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-11.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.11: <strong>Links</strong>: driehoeksgrid; <strong>rechts</strong>: vierkantsgrid. Het driehoeksgrid heeft minder boringen nodig om een vondstconcentratie van gelijke diameter minstens één keer te treffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.11: <strong>Links</strong>: driehoeksgrid; <strong>rechts</strong>: vierkantsgrid. Het driehoeksgrid heeft minder boringen nodig om een vondstconcentratie van gelijke diameter minstens één keer te treffen.</figcaption>
 </figure>
 </div>
 <p>Een <strong>regelmatig</strong> grid is het uitgangspunt. Je kan echter er van afwijken als de uitvoering van een boring:</p>
@@ -437,7 +468,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-12" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-12.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.12: <strong>Links</strong>: een boring valt binnen een obstakel of ernstige verstoring (grijze rechthoek). Deze wordt verplaatst tot net ernaast (rood boorpunt). <strong>Rechts</strong>: Boringen A en B vallen binnen een groter obstakel of ernstige verstoring. Boring A kan niet verplaatst worden en wordt daarom geschrapt. Boring B kan wel verplaatst worden tot locatie C.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.12: <strong>Links</strong>: een boring valt binnen een obstakel of ernstige verstoring (grijze rechthoek). Deze wordt verplaatst tot net ernaast (rood boorpunt). <strong>Rechts</strong>: Boringen A en B vallen binnen een groter obstakel of ernstige verstoring. Boring A kan niet verplaatst worden en wordt daarom geschrapt. Boring B kan wel verplaatst worden tot locatie C.</figcaption>
 </figure>
 </div>
 </section>
@@ -447,35 +478,35 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-13" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image195.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.13: Verschillende gridresoluties, met de cirkelvormige vondstconcentraties die ze minstens één keer treffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.13: Verschillende gridresoluties, met de cirkelvormige vondstconcentraties die ze minstens één keer treffen.</figcaption>
 </figure>
 </div>
 <p>Een boorgrid van <strong>10 bij 12 m</strong> treft een cirkelvormige concentratie met een diameter groter dan 12,4 m minstens één keer (<a href="#fig-4-13">fig.&nbsp;<span>4.13</span></a>). Individuele vondstconcentraties zijn echter vaak (veel) kleiner. De trefkans is bij een 10 bij 12 m grid dan ook relatief laag en laat niet toe om individuele concentraties met enige zekerheid te treffen. Booronderzoek met deze resolutie kan dus de aanwezigheid van sites aantonen, maar is niet in staat om de spreiding van artefactenclusters erbinnen in kaart te brengen. Dit grid laat daarom enkel interpretatie toe van het hele onderzoeksgebied of minstens grote zones erin (<a href="#fig-4-14">fig.&nbsp;<span>4.14</span></a>).</p>
 <div id="fig-4-14" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image196.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.14: Trefkans bij een 10 bij 12 m grid. De afstand tussen de boringen is duidelijk groter dan de diameter van de vondstconcentraties, wat tot een beperkte trefkans leidt. Hier wordt slechts één van de vijf concentraties getroffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.14: Trefkans bij een 10 bij 12 m grid. De afstand tussen de boringen is duidelijk groter dan de diameter van de vondstconcentraties, wat tot een beperkte trefkans leidt. Hier wordt slechts één van de vijf concentraties getroffen.</figcaption>
 </figure>
 </div>
 <p>Een boorgrid van <strong>5 bij 6 m</strong> treft een cirkelvormige concentratie met een diameter groter dan 6,5 m minstens één keer (<a href="#fig-4-13">fig.&nbsp;<span>4.13</span></a>). Dit benadert de grootteorde van gekende steentijd vondstconcentraties beter, maar is nog steeds groter dan heel wat concentraties. De trefkans van deze resolutie is daarom veel groter dan bij een 10 bij 12 m grid, maar individuele concentraties kunnen nog steeds gemist worden. Dit grid laat dus een algemene interpretatie toe over de aanwezigheid en spreiding van artefactenclusters, maar met een zekere foutmarge (<a href="#fig-4-15">fig.&nbsp;<span>4.15</span></a>).</p>
 <div id="fig-4-15" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image197.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.15: Trefkans bij een 5 bij 6 m grid. De afstand tussen de boringen is ongeveer even groot als de diameter van sommige vondstconcentraties. Dit leidt tot een betere trefkans, maar individuele concentraties worden nog gemist. Hier worden drie van de vijf concentraties getroffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.15: Trefkans bij een 5 bij 6 m grid. De afstand tussen de boringen is ongeveer even groot als de diameter van sommige vondstconcentraties. Dit leidt tot een betere trefkans, maar individuele concentraties worden nog gemist. Hier worden drie van de vijf concentraties getroffen.</figcaption>
 </figure>
 </div>
 <p>Een boorgrid van <strong>2,5 bij 3 m</strong> treft een cirkelvormige concentratie met een diameter groter dan 3,3 m minstens één keer (<a href="#fig-4-13">fig.&nbsp;<span>4.13</span></a>). Deze resolutie biedt daarmee een relatief grote trefkans voor individuele vondstconcentraties (<a href="#fig-4-16">fig.&nbsp;<span>4.16</span></a>).</p>
 <div id="fig-4-16" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image198.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.16: Trefkans bij een 2,5 bij 3 m grid. De afstand tussen de boringen is kleiner dan de diameter van de vondstconcentraties, met een hoge trefkans tot gevolg. Hier worden alle concentraties meermaals getroffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.16: Trefkans bij een 2,5 bij 3 m grid. De afstand tussen de boringen is kleiner dan de diameter van de vondstconcentraties, met een hoge trefkans tot gevolg. Hier worden alle concentraties meermaals getroffen.</figcaption>
 </figure>
 </div>
 <p>Kortom, een hogere resolutie van het boorgrid resulteert steeds in een beduidend hogere trefkans. Een verdubbeling van de resolutie van het boorgrid veroorzaakt echter ongeveer een verviervoudiging van het aantal boringen (<a href="#fig-4-17">fig.&nbsp;<span>4.17</span></a>).</p>
 <div id="fig-4-17" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-17.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.17: De aantallen boringen per hectare voor elk grid. De exacte aantallen kunnen licht variëren naargelang de precieze plaatsing van een boorgrid binnen het onderzoeksgebied.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.17: De aantallen boringen per hectare voor elk grid. De exacte aantallen kunnen licht variëren naargelang de precieze plaatsing van een boorgrid binnen het onderzoeksgebied.</figcaption>
 </figure>
 </div>
 <p>In de huidige praktijk wordt een 5 bij 6 m grid voor het opsporen van individuele artefactconcentraties beschouwd als het efficiëntst om een eerste beeld te vormen van de aanwezigheid en spreiding van steentijd artefactensites in een onderzoeksgebied. Daarom is een <strong>grid van 5 bij 6 m</strong><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <strong>steeds het uitgangspunt</strong> bij archeologisch booronderzoek. We moeten ons er echter bewust van zijn dat dit grid niet toelaat om met zekerheid elke artefactconcentratie te treffen (zie boven)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
@@ -485,7 +516,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-18" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-18.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.18: Bij een archeologisch booronderzoek in een 10 bij 12 m grid (links) blijken twee boringen positief (rood). De resolutie van het grid wordt verdubbeld (rechts; grijze stippen), wat extra positieve boringen oplevert. Sommigen liggen in de nabijheid van de positieve boringen uit het 10 bij 12 m grid, maar anderen bevinden zich in zones die voordien ‘leeg’ leken.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.18: Bij een archeologisch booronderzoek in een 10 bij 12 m grid (links) blijken twee boringen positief (rood). De resolutie van het grid wordt verdubbeld (rechts; grijze stippen), wat extra positieve boringen oplevert. Sommigen liggen in de nabijheid van de positieve boringen uit het 10 bij 12 m grid, maar anderen bevinden zich in zones die voordien ‘leeg’ leken.</figcaption>
 </figure>
 </div>
 <p>Wanneer je het grid verdicht tot 5 bij 6 m doe je dat steeds <strong>over een ruime zone</strong>.</p>
@@ -501,13 +532,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-19" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-19.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.19: In spreiding van de positieve boringen in dit 10 bij 12 m grid (rode stippen) zijn geen duidelijke clustering of andere patronen herkenbaar (A). Het grid wordt over het hele onderzoeksgebied verdicht tot 5 bij 6 m (B).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.19: In spreiding van de positieve boringen in dit 10 bij 12 m grid (rode stippen) zijn geen duidelijke clustering of andere patronen herkenbaar (A). Het grid wordt over het hele onderzoeksgebied verdicht tot 5 bij 6 m (B).</figcaption>
 </figure>
 </div>
 <div id="fig-4-20" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-20.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.20: De positieve boringen uit het 10 bij 12 m grid (rode stippen) zijn duidelijk geclusterd (A). Bovendien kan dit resultaat verklaard worden door een betere bodembewaring in deze zone. Dit laat toe om de verdichting tot een 5 bij 6 m grid te beperken tot een deelzone van het onderzoeksgebied (B). Deze zone wordt weliswaar afgebakend met een duidelijke marge.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.20: De positieve boringen uit het 10 bij 12 m grid (rode stippen) zijn duidelijk geclusterd (A). Bovendien kan dit resultaat verklaard worden door een betere bodembewaring in deze zone. Dit laat toe om de verdichting tot een 5 bij 6 m grid te beperken tot een deelzone van het onderzoeksgebied (B). Deze zone wordt weliswaar afgebakend met een duidelijke marge.</figcaption>
 </figure>
 </div>
 <p><strong>Terreinen kleiner dan ongeveer 2500 m² prospecteer je best meteen in een 5 bij 6 m grid</strong>. Bij kleinere terreinen wordt immers zowel het aantal vondstconcentraties dat aanwezig kan zijn als het totaal aantal boringen van een 10 bij 12 m grid te klein voor een voldoende trefkans.</p>
@@ -522,7 +553,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-21" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-21.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.21: <strong>A</strong>: Dit langwerpig onderzoeksgebied loopt nog veel verder door naar boven en onder, maar is vrij smal. Er kan in een 10 bij 12 m grid slechts één boorraai geplaatst worden. Dit biedt onvoldoende trefkans: geen van de twee vondstconcentraties wordt getroffen. <strong>B</strong>: Een verdichting van het grid tot 5 bij 6 m leidt tot een hogere trefkans: beide concentraties worden getroffen. <strong>C</strong>: Een uitbreiding van het 10 bij 12 m grid verhoogt ook de trefkans: één van de concentraties wordt getroffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.21: <strong>A</strong>: Dit langwerpig onderzoeksgebied loopt nog veel verder door naar boven en onder, maar is vrij smal. Er kan in een 10 bij 12 m grid slechts één boorraai geplaatst worden. Dit biedt onvoldoende trefkans: geen van de twee vondstconcentraties wordt getroffen. <strong>B</strong>: Een verdichting van het grid tot 5 bij 6 m leidt tot een hogere trefkans: beide concentraties worden getroffen. <strong>C</strong>: Een uitbreiding van het 10 bij 12 m grid verhoogt ook de trefkans: één van de concentraties wordt getroffen.</figcaption>
 </figure>
 </div>
 </section>
@@ -535,7 +566,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-22" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image209.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.22: De kop van een Edelmanboor wordt in de grond gedraaid en roert daarbij het sediment. Ondanks deze verstoring kan je afzonderlijke aardkundige eenheden meestal nog voldoende waarnemen en gescheiden inzamelen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.22: De kop van een Edelmanboor wordt in de grond gedraaid en roert daarbij het sediment. Ondanks deze verstoring kan je afzonderlijke aardkundige eenheden meestal nog voldoende waarnemen en gescheiden inzamelen.</figcaption>
 </figure>
 </div>
 </section>
@@ -547,7 +578,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-23" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image210.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.23: Twee in het donkergrijs aangeduide niveaus bevatten archeologische niveaus met artefacten. Er wordt volledig door beide niveaus geboord. Onderaan wordt enige marge genomen omdat artefacten soms tot buiten de verwachte niveaus voorkomen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.23: Twee in het donkergrijs aangeduide niveaus bevatten archeologische niveaus met artefacten. Er wordt volledig door beide niveaus geboord. Onderaan wordt enige marge genomen omdat artefacten soms tot buiten de verwachte niveaus voorkomen.</figcaption>
 </figure>
 </div>
 </section>
@@ -563,14 +594,14 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-24" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image211.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.24: <strong>1</strong>: Monsters worden ingezameld van de twee aardkundige eenheden die archeologische niveaus met artefacten bevatten. <strong>2</strong>: Artefacten komen vaak ook voor in aanpalende aardkundige eenheden. Hiervan wordt ook minstens een deel ingezameld. Deze monsters blijven gescheiden van monsters 1. <strong>3</strong>: Ook de rest van de boring wordt bemonsterd, omdat de mogelijke verticale vondstspreiding meestal onvoldoende gekend is voor de start van de prospectie. Enkel bij grote diepteverschillen kunnen steriele niveaus eventueel onbemonsterd blijven. <strong>Noot</strong>: Het dikkere bovenste donkergrijze niveau kan eventueel verder onderverdeeld worden in artificiële eenheden (streepjeslijnen).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.24: <strong>1</strong>: Monsters worden ingezameld van de twee aardkundige eenheden die archeologische niveaus met artefacten bevatten. <strong>2</strong>: Artefacten komen vaak ook voor in aanpalende aardkundige eenheden. Hiervan wordt ook minstens een deel ingezameld. Deze monsters blijven gescheiden van monsters 1. <strong>3</strong>: Ook de rest van de boring wordt bemonsterd, omdat de mogelijke verticale vondstspreiding meestal onvoldoende gekend is voor de start van de prospectie. Enkel bij grote diepteverschillen kunnen steriele niveaus eventueel onbemonsterd blijven. <strong>Noot</strong>: Het dikkere bovenste donkergrijze niveau kan eventueel verder onderverdeeld worden in artificiële eenheden (streepjeslijnen).</figcaption>
 </figure>
 </div>
 <p>Indien een deel van de verwachte site in een <strong>ploeglaag</strong> kan opgenomen zijn, maakt deze ploeglaag volgens de CGP deel uit van de vraagstelling en moet je deze ook (gescheiden) bemonsteren. Dit verhoogt minstens de vindkans van de site. Het potentieel voor kenniswinst van de in de bouwvoor aanwezige archeologie wordt met waarderingsonderzoek verder geëvalueerd (<a href="#fig-4-25">fig.&nbsp;<span>4.25</span></a>; zie 5.2.2.2.5).</p>
 <div id="fig-4-25" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image212.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.25: Een deel van de steentijdsite is opgenomen in een ploeglaag (donkergrijs). Het bemonsteren van de ploeglaag (Ap) verhoogt de vindkans: in dit voorbeeld komen twee van de vijf boorvondsten (rode stippen) uit de ploeglaag. Bij een minder rijke boring kan de ploeglaag de enige vondsten opleveren.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.25: Een deel van de steentijdsite is opgenomen in een ploeglaag (donkergrijs). Het bemonsteren van de ploeglaag (Ap) verhoogt de vindkans: in dit voorbeeld komen twee van de vijf boorvondsten (rode stippen) uit de ploeglaag. Bij een minder rijke boring kan de ploeglaag de enige vondsten opleveren.</figcaption>
 </figure>
 </div>
 </section>
@@ -580,7 +611,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-4-26" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-4-26.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;4.26: Vergelijking van de oppervlaktes die door verschillende boordiameters bemonsterd worden. De volumes van de boormonsters hebben dezelfde verhouding als deze oppervlaktes.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;4.26: Vergelijking van de oppervlaktes die door verschillende boordiameters bemonsterd worden. De volumes van de boormonsters hebben dezelfde verhouding als deze oppervlaktes.</figcaption>
 </figure>
 </div>
 <p>In de praktijk kan het gebruik van grote diameters echter moeilijk tot onmogelijk gemaakt worden door:</p>
@@ -879,9 +910,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -946,6 +991,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -989,7 +1120,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

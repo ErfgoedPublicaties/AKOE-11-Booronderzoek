@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.215">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -59,7 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "meer overeenkomsten in dit document",
     "search-clear-button-title": "Wissen",
     "search-detached-cancel-button-title": "Annuleren",
-    "search-submit-button-title": "Verzenden"
+    "search-submit-button-title": "Verzenden",
+    "search-label": "Zoeken"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WFNTWBH9Q4"></script>
@@ -72,14 +73,26 @@ gtag('js', new Date());
 gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 </script>
 <style>
-    .quarto-title-block .quarto-title-banner {
-      background: #914f9a;
-    }
-    </style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #FFFFFF;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #FFFFFF;
+background: #914f9a;
+      }
+</style>
 
 
 <meta name="twitter:title" content="Afwegingskader booronderzoek - 2&nbsp; Bureauonderzoek">
-<meta name="twitter:description" content="Het bureauonderzoek is steeds de eerste stap in het preventieve archeologische traject, en is uiteraard ook de fase waarin bepaald wordt welke verdere stappen gezet worden.">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="/docs/figuren/image217.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -88,11 +101,16 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalk in" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02_bureauonderzoek.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Schakel zijbalk in" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -101,7 +119,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></h1>
+      <h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></h1>
                       </div>
   </div>
     
@@ -116,168 +134,181 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Afwegingskader booronderzoek</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/hanecakr/handleidingBooronderzoek/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-    </ul>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/ErfgoedPublicaties/AKOE-11-Booronderzoek" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Schakel donkere modus in"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Zoeken"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welkom!</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welkom!</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./updates.html" class="sidebar-item-text sidebar-link">Updates</a>
+  <a href="./updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updates</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_inleiding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></a>
+  <a href="./01_inleiding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inleiding</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_bureauonderzoek.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></a>
+  <a href="./02_bureauonderzoek.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bureauonderzoek</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_landschappelijk.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Landschappelijk bodemonderzoek</span></a>
+  <a href="./03_landschappelijk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Landschappelijk bodemonderzoek</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_prospectie.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></a>
+  <a href="./04_prospectie.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prospectie</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_waardering.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Waardering</span></a>
+  <a href="./05_waardering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Waardering</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_fasering.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fasering</span></a>
+  <a href="./06_fasering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fasering</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_besluit.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Besluit</span></a>
+  <a href="./07_besluit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Besluit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./literatuur.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literatuur</span></a>
+  <a href="./literatuur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Literatuur</span></span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Op deze pagina</h2>
    
   <ul>
-  <li><a href="#inleiding" id="toc-inleiding" class="nav-link active" data-scroll-target="#inleiding"><span class="toc-section-number">2.1</span>  Inleiding</a></li>
-  <li><a href="#bronnen" id="toc-bronnen" class="nav-link" data-scroll-target="#bronnen"><span class="toc-section-number">2.2</span>  Bronnen</a>
+  <li><a href="#inleiding" id="toc-inleiding" class="nav-link active" data-scroll-target="#inleiding"><span class="header-section-number">2.1</span> Inleiding</a></li>
+  <li><a href="#bronnen" id="toc-bronnen" class="nav-link" data-scroll-target="#bronnen"><span class="header-section-number">2.2</span> Bronnen</a>
   <ul>
-  <li><a href="#bodemkaarten" id="toc-bodemkaarten" class="nav-link" data-scroll-target="#bodemkaarten"><span class="toc-section-number">2.2.1</span>  Bodemkaarten</a></li>
-  <li><a href="#quartairgeologische-kaarten" id="toc-quartairgeologische-kaarten" class="nav-link" data-scroll-target="#quartairgeologische-kaarten"><span class="toc-section-number">2.2.2</span>  Quartairgeologische kaarten</a></li>
-  <li><a href="#geomorfologische-kaarten" id="toc-geomorfologische-kaarten" class="nav-link" data-scroll-target="#geomorfologische-kaarten"><span class="toc-section-number">2.2.3</span>  Geomorfologische kaarten</a></li>
-  <li><a href="#digitale-hoogtemodellen-op-basis-van-laseraltimetrie" id="toc-digitale-hoogtemodellen-op-basis-van-laseraltimetrie" class="nav-link" data-scroll-target="#digitale-hoogtemodellen-op-basis-van-laseraltimetrie"><span class="toc-section-number">2.2.4</span>  Digitale Hoogtemodellen op basis van laseraltimetrie</a>
+  <li><a href="#bodemkaarten" id="toc-bodemkaarten" class="nav-link" data-scroll-target="#bodemkaarten"><span class="header-section-number">2.2.1</span> Bodemkaarten</a></li>
+  <li><a href="#quartairgeologische-kaarten" id="toc-quartairgeologische-kaarten" class="nav-link" data-scroll-target="#quartairgeologische-kaarten"><span class="header-section-number">2.2.2</span> Quartairgeologische kaarten</a></li>
+  <li><a href="#geomorfologische-kaarten" id="toc-geomorfologische-kaarten" class="nav-link" data-scroll-target="#geomorfologische-kaarten"><span class="header-section-number">2.2.3</span> Geomorfologische kaarten</a></li>
+  <li><a href="#digitale-hoogtemodellen-op-basis-van-laseraltimetrie" id="toc-digitale-hoogtemodellen-op-basis-van-laseraltimetrie" class="nav-link" data-scroll-target="#digitale-hoogtemodellen-op-basis-van-laseraltimetrie"><span class="header-section-number">2.2.4</span> Digitale Hoogtemodellen op basis van laseraltimetrie</a>
   <ul class="collapse">
-  <li><a href="#beschikbare-producten" id="toc-beschikbare-producten" class="nav-link" data-scroll-target="#beschikbare-producten"><span class="toc-section-number">2.2.4.1</span>  Beschikbare producten</a></li>
-  <li><a href="#gebruik" id="toc-gebruik" class="nav-link" data-scroll-target="#gebruik"><span class="toc-section-number">2.2.4.2</span>  Gebruik</a></li>
+  <li><a href="#beschikbare-producten" id="toc-beschikbare-producten" class="nav-link" data-scroll-target="#beschikbare-producten"><span class="header-section-number">2.2.4.1</span> Beschikbare producten</a></li>
+  <li><a href="#gebruik" id="toc-gebruik" class="nav-link" data-scroll-target="#gebruik"><span class="header-section-number">2.2.4.2</span> Gebruik</a></li>
   </ul></li>
-  <li><a href="#de-databank-ondergrond-vlaanderen-dov" id="toc-de-databank-ondergrond-vlaanderen-dov" class="nav-link" data-scroll-target="#de-databank-ondergrond-vlaanderen-dov"><span class="toc-section-number">2.2.5</span>  De Databank Ondergrond Vlaanderen (DOV)</a></li>
-  <li><a href="#bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik" id="toc-bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik" class="nav-link" data-scroll-target="#bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik"><span class="toc-section-number">2.2.6</span>  Bronnen voor het inschatten van de impact van historisch en recent landgebruik</a>
+  <li><a href="#de-databank-ondergrond-vlaanderen-dov" id="toc-de-databank-ondergrond-vlaanderen-dov" class="nav-link" data-scroll-target="#de-databank-ondergrond-vlaanderen-dov"><span class="header-section-number">2.2.5</span> De Databank Ondergrond Vlaanderen (DOV)</a></li>
+  <li><a href="#bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik" id="toc-bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik" class="nav-link" data-scroll-target="#bronnen-voor-het-inschatten-van-de-impact-van-historisch-en-recent-landgebruik"><span class="header-section-number">2.2.6</span> Bronnen voor het inschatten van de impact van historisch en recent landgebruik</a>
   <ul class="collapse">
-  <li><a href="#algemeen-de-impact-van-landgebruik-op-steentijdsites" id="toc-algemeen-de-impact-van-landgebruik-op-steentijdsites" class="nav-link" data-scroll-target="#algemeen-de-impact-van-landgebruik-op-steentijdsites"><span class="toc-section-number">2.2.6.1</span>  Algemeen: de impact van landgebruik op steentijdsites</a></li>
-  <li><a href="#bodemgebruik-en-zijn-effecten-in-kaart-brengen" id="toc-bodemgebruik-en-zijn-effecten-in-kaart-brengen" class="nav-link" data-scroll-target="#bodemgebruik-en-zijn-effecten-in-kaart-brengen"><span class="toc-section-number">2.2.6.2</span>  Bodemgebruik en zijn effecten in kaart brengen</a></li>
+  <li><a href="#algemeen-de-impact-van-landgebruik-op-steentijdsites" id="toc-algemeen-de-impact-van-landgebruik-op-steentijdsites" class="nav-link" data-scroll-target="#algemeen-de-impact-van-landgebruik-op-steentijdsites"><span class="header-section-number">2.2.6.1</span> Algemeen: de impact van landgebruik op steentijdsites</a></li>
+  <li><a href="#bodemgebruik-en-zijn-effecten-in-kaart-brengen" id="toc-bodemgebruik-en-zijn-effecten-in-kaart-brengen" class="nav-link" data-scroll-target="#bodemgebruik-en-zijn-effecten-in-kaart-brengen"><span class="header-section-number">2.2.6.2</span> Bodemgebruik en zijn effecten in kaart brengen</a></li>
   </ul></li>
-  <li><a href="#erosiekaarten" id="toc-erosiekaarten" class="nav-link" data-scroll-target="#erosiekaarten"><span class="toc-section-number">2.2.7</span>  Erosiekaarten</a></li>
+  <li><a href="#erosiekaarten" id="toc-erosiekaarten" class="nav-link" data-scroll-target="#erosiekaarten"><span class="header-section-number">2.2.7</span> Erosiekaarten</a></li>
   </ul></li>
-  <li><a href="#het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites" id="toc-het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites" class="nav-link" data-scroll-target="#het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites"><span class="toc-section-number">2.3</span>  Het bepalen van een archeologische verwachting ten aanzien van steentijdsites</a>
+  <li><a href="#het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites" id="toc-het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites" class="nav-link" data-scroll-target="#het-bepalen-van-een-archeologische-verwachting-ten-aanzien-van-steentijdsites"><span class="header-section-number">2.3</span> Het bepalen van een archeologische verwachting ten aanzien van steentijdsites</a>
   <ul>
-  <li><a href="#archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen" id="toc-archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen" class="nav-link" data-scroll-target="#archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen"><span class="toc-section-number">2.3.1</span>  Archeologie van prehistorische jager-verzamelaars: enkele algemene bedenkingen</a></li>
-  <li><a href="#verwachtingsmodellen" id="toc-verwachtingsmodellen" class="nav-link" data-scroll-target="#verwachtingsmodellen"><span class="toc-section-number">2.3.2</span>  Verwachtingsmodellen</a></li>
-  <li><a href="#het-bewaringspotentieel-voor-steentijd-artefactensites" id="toc-het-bewaringspotentieel-voor-steentijd-artefactensites" class="nav-link" data-scroll-target="#het-bewaringspotentieel-voor-steentijd-artefactensites"><span class="toc-section-number">2.3.3</span>  Het ‘bewaringspotentieel’ voor steentijd artefactensites</a></li>
+  <li><a href="#archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen" id="toc-archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen" class="nav-link" data-scroll-target="#archeologie-van-prehistorische-jager-verzamelaars-enkele-algemene-bedenkingen"><span class="header-section-number">2.3.1</span> Archeologie van prehistorische jager-verzamelaars: enkele algemene bedenkingen</a></li>
+  <li><a href="#verwachtingsmodellen" id="toc-verwachtingsmodellen" class="nav-link" data-scroll-target="#verwachtingsmodellen"><span class="header-section-number">2.3.2</span> Verwachtingsmodellen</a></li>
+  <li><a href="#het-bewaringspotentieel-voor-steentijd-artefactensites" id="toc-het-bewaringspotentieel-voor-steentijd-artefactensites" class="nav-link" data-scroll-target="#het-bewaringspotentieel-voor-steentijd-artefactensites"><span class="header-section-number">2.3.3</span> Het ‘bewaringspotentieel’ voor steentijd artefactensites</a></li>
   </ul></li>
-  <li><a href="#overzicht-per-archeoregio" id="toc-overzicht-per-archeoregio" class="nav-link" data-scroll-target="#overzicht-per-archeoregio"><span class="toc-section-number">2.4</span>  Overzicht per archeoregio</a>
+  <li><a href="#overzicht-per-archeoregio" id="toc-overzicht-per-archeoregio" class="nav-link" data-scroll-target="#overzicht-per-archeoregio"><span class="header-section-number">2.4</span> Overzicht per archeoregio</a>
   <ul>
-  <li><a href="#inleiding-1" id="toc-inleiding-1" class="nav-link" data-scroll-target="#inleiding-1"><span class="toc-section-number">2.4.1</span>  Inleiding</a></li>
-  <li><a href="#het-dekzandgebied-archeoregios-kempen-en-zandstreek" id="toc-het-dekzandgebied-archeoregios-kempen-en-zandstreek" class="nav-link" data-scroll-target="#het-dekzandgebied-archeoregios-kempen-en-zandstreek"><span class="toc-section-number">2.4.2</span>  Het dekzandgebied (archeoregio’s Kempen en Zandstreek)</a>
+  <li><a href="#inleiding-1" id="toc-inleiding-1" class="nav-link" data-scroll-target="#inleiding-1"><span class="header-section-number">2.4.1</span> Inleiding</a></li>
+  <li><a href="#het-dekzandgebied-archeoregios-kempen-en-zandstreek" id="toc-het-dekzandgebied-archeoregios-kempen-en-zandstreek" class="nav-link" data-scroll-target="#het-dekzandgebied-archeoregios-kempen-en-zandstreek"><span class="header-section-number">2.4.2</span> Het dekzandgebied (archeoregio’s Kempen en Zandstreek)</a>
   <ul class="collapse">
-  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis"><span class="toc-section-number">2.4.2.1</span>  Een beknopt overzicht van de archeologische kennis</a></li>
-  <li><a href="#quartairgeologische-en-geomorfologische-aspecten" id="toc-quartairgeologische-en-geomorfologische-aspecten" class="nav-link" data-scroll-target="#quartairgeologische-en-geomorfologische-aspecten"><span class="toc-section-number">2.4.2.2</span>  Quartairgeologische en geomorfologische aspecten</a></li>
-  <li><a href="#bodems" id="toc-bodems" class="nav-link" data-scroll-target="#bodems"><span class="toc-section-number">2.4.2.3</span>  Bodems</a></li>
+  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis"><span class="header-section-number">2.4.2.1</span> Een beknopt overzicht van de archeologische kennis</a></li>
+  <li><a href="#quartairgeologische-en-geomorfologische-aspecten" id="toc-quartairgeologische-en-geomorfologische-aspecten" class="nav-link" data-scroll-target="#quartairgeologische-en-geomorfologische-aspecten"><span class="header-section-number">2.4.2.2</span> Quartairgeologische en geomorfologische aspecten</a></li>
+  <li><a href="#bodems" id="toc-bodems" class="nav-link" data-scroll-target="#bodems"><span class="header-section-number">2.4.2.3</span> Bodems</a></li>
   </ul></li>
-  <li><a href="#rivier--en-beekvalleien" id="toc-rivier--en-beekvalleien" class="nav-link" data-scroll-target="#rivier--en-beekvalleien"><span class="toc-section-number">2.4.3</span>  Rivier- en beekvalleien</a>
+  <li><a href="#rivier--en-beekvalleien" id="toc-rivier--en-beekvalleien" class="nav-link" data-scroll-target="#rivier--en-beekvalleien"><span class="header-section-number">2.4.3</span> Rivier- en beekvalleien</a>
   <ul class="collapse">
-  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis-1" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis-1" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis-1"><span class="toc-section-number">2.4.3.1</span>  Een beknopt overzicht van de archeologische kennis</a></li>
-  <li><a href="#quartairgeologie-en-geomorfologie" id="toc-quartairgeologie-en-geomorfologie" class="nav-link" data-scroll-target="#quartairgeologie-en-geomorfologie"><span class="toc-section-number">2.4.3.2</span>  Quartairgeologie en geomorfologie</a></li>
-  <li><a href="#steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden" id="toc-steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden" class="nav-link" data-scroll-target="#steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden"><span class="toc-section-number">2.4.3.3</span>  Steentijdsites in beek- en riviervalleien: specifieke kenmerken en mogelijkheden</a></li>
+  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis-1" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis-1" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis-1"><span class="header-section-number">2.4.3.1</span> Een beknopt overzicht van de archeologische kennis</a></li>
+  <li><a href="#quartairgeologie-en-geomorfologie" id="toc-quartairgeologie-en-geomorfologie" class="nav-link" data-scroll-target="#quartairgeologie-en-geomorfologie"><span class="header-section-number">2.4.3.2</span> Quartairgeologie en geomorfologie</a></li>
+  <li><a href="#steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden" id="toc-steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden" class="nav-link" data-scroll-target="#steentijdsites-in-beek--en-riviervalleien-specifieke-kenmerken-en-mogelijkheden"><span class="header-section-number">2.4.3.3</span> Steentijdsites in beek- en riviervalleien: specifieke kenmerken en mogelijkheden</a></li>
   </ul></li>
-  <li><a href="#de-zandleem--en-leemstreek" id="toc-de-zandleem--en-leemstreek" class="nav-link" data-scroll-target="#de-zandleem--en-leemstreek"><span class="toc-section-number">2.4.4</span>  De zandleem- en leemstreek</a>
+  <li><a href="#de-zandleem--en-leemstreek" id="toc-de-zandleem--en-leemstreek" class="nav-link" data-scroll-target="#de-zandleem--en-leemstreek"><span class="header-section-number">2.4.4</span> De zandleem- en leemstreek</a>
   <ul class="collapse">
-  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis-2" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis-2" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis-2"><span class="toc-section-number">2.4.4.1</span>  Een beknopt overzicht van de archeologische kennis</a></li>
-  <li><a href="#geologie-en-geomorfologie-bodems" id="toc-geologie-en-geomorfologie-bodems" class="nav-link" data-scroll-target="#geologie-en-geomorfologie-bodems"><span class="toc-section-number">2.4.4.2</span>  Geologie en geomorfologie, bodems</a></li>
+  <li><a href="#een-beknopt-overzicht-van-de-archeologische-kennis-2" id="toc-een-beknopt-overzicht-van-de-archeologische-kennis-2" class="nav-link" data-scroll-target="#een-beknopt-overzicht-van-de-archeologische-kennis-2"><span class="header-section-number">2.4.4.1</span> Een beknopt overzicht van de archeologische kennis</a></li>
+  <li><a href="#geologie-en-geomorfologie-bodems" id="toc-geologie-en-geomorfologie-bodems" class="nav-link" data-scroll-target="#geologie-en-geomorfologie-bodems"><span class="header-section-number">2.4.4.2</span> Geologie en geomorfologie, bodems</a></li>
   </ul></li>
-  <li><a href="#de-poldergebieden-kustzone-en-de-noordzee" id="toc-de-poldergebieden-kustzone-en-de-noordzee" class="nav-link" data-scroll-target="#de-poldergebieden-kustzone-en-de-noordzee"><span class="toc-section-number">2.4.5</span>  De poldergebieden, kustzone en de Noordzee</a>
+  <li><a href="#de-poldergebieden-kustzone-en-de-noordzee" id="toc-de-poldergebieden-kustzone-en-de-noordzee" class="nav-link" data-scroll-target="#de-poldergebieden-kustzone-en-de-noordzee"><span class="header-section-number">2.4.5</span> De poldergebieden, kustzone en de Noordzee</a>
   <ul class="collapse">
-  <li><a href="#de-kustzone-en-de-noordzee" id="toc-de-kustzone-en-de-noordzee" class="nav-link" data-scroll-target="#de-kustzone-en-de-noordzee"><span class="toc-section-number">2.4.5.1</span>  De kustzone en de Noordzee</a></li>
-  <li><a href="#de-scheldepolders" id="toc-de-scheldepolders" class="nav-link" data-scroll-target="#de-scheldepolders"><span class="toc-section-number">2.4.5.2</span>  De Scheldepolders</a></li>
+  <li><a href="#de-kustzone-en-de-noordzee" id="toc-de-kustzone-en-de-noordzee" class="nav-link" data-scroll-target="#de-kustzone-en-de-noordzee"><span class="header-section-number">2.4.5.1</span> De kustzone en de Noordzee</a></li>
+  <li><a href="#de-scheldepolders" id="toc-de-scheldepolders" class="nav-link" data-scroll-target="#de-scheldepolders"><span class="header-section-number">2.4.5.2</span> De Scheldepolders</a></li>
   </ul></li>
-  <li><a href="#de-maasvallei-en-maasterrassen" id="toc-de-maasvallei-en-maasterrassen" class="nav-link" data-scroll-target="#de-maasvallei-en-maasterrassen"><span class="toc-section-number">2.4.6</span>  De Maasvallei en Maasterrassen</a>
+  <li><a href="#de-maasvallei-en-maasterrassen" id="toc-de-maasvallei-en-maasterrassen" class="nav-link" data-scroll-target="#de-maasvallei-en-maasterrassen"><span class="header-section-number">2.4.6</span> De Maasvallei en Maasterrassen</a>
   <ul class="collapse">
-  <li><a href="#geologie-geomorfologie-bodems" id="toc-geologie-geomorfologie-bodems" class="nav-link" data-scroll-target="#geologie-geomorfologie-bodems"><span class="toc-section-number">2.4.6.1</span>  Geologie, geomorfologie, bodems</a></li>
-  <li><a href="#beknopt-overzicht-van-de-archeologische-kennis-2" id="toc-beknopt-overzicht-van-de-archeologische-kennis-2" class="nav-link" data-scroll-target="#beknopt-overzicht-van-de-archeologische-kennis-2"><span class="toc-section-number">2.4.6.2</span>  Beknopt overzicht van de archeologische kennis</a></li>
+  <li><a href="#geologie-geomorfologie-bodems" id="toc-geologie-geomorfologie-bodems" class="nav-link" data-scroll-target="#geologie-geomorfologie-bodems"><span class="header-section-number">2.4.6.1</span> Geologie, geomorfologie, bodems</a></li>
+  <li><a href="#beknopt-overzicht-van-de-archeologische-kennis-2" id="toc-beknopt-overzicht-van-de-archeologische-kennis-2" class="nav-link" data-scroll-target="#beknopt-overzicht-van-de-archeologische-kennis-2"><span class="header-section-number">2.4.6.2</span> Beknopt overzicht van de archeologische kennis</a></li>
   </ul></li>
-  <li><a href="#het-middenpaleolithicum" id="toc-het-middenpaleolithicum" class="nav-link" data-scroll-target="#het-middenpaleolithicum"><span class="toc-section-number">2.4.7</span>  Het middenpaleolithicum</a>
+  <li><a href="#het-middenpaleolithicum" id="toc-het-middenpaleolithicum" class="nav-link" data-scroll-target="#het-middenpaleolithicum"><span class="header-section-number">2.4.7</span> Het middenpaleolithicum</a>
   <ul class="collapse">
-  <li><a href="#inleiding-specifieke-problematiek-middenpaleolithicum" id="toc-inleiding-specifieke-problematiek-middenpaleolithicum" class="nav-link" data-scroll-target="#inleiding-specifieke-problematiek-middenpaleolithicum"><span class="toc-section-number">2.4.7.1</span>  Inleiding: specifieke problematiek middenpaleolithicum</a></li>
-  <li><a href="#overzicht-van-de-archeologische-kennis" id="toc-overzicht-van-de-archeologische-kennis" class="nav-link" data-scroll-target="#overzicht-van-de-archeologische-kennis"><span class="toc-section-number">2.4.7.2</span>  Overzicht van de archeologische kennis</a></li>
-  <li><a href="#de-vlaamse-vallei" id="toc-de-vlaamse-vallei" class="nav-link" data-scroll-target="#de-vlaamse-vallei"><span class="toc-section-number">2.4.7.3</span>  De Vlaamse Vallei</a></li>
+  <li><a href="#inleiding-specifieke-problematiek-middenpaleolithicum" id="toc-inleiding-specifieke-problematiek-middenpaleolithicum" class="nav-link" data-scroll-target="#inleiding-specifieke-problematiek-middenpaleolithicum"><span class="header-section-number">2.4.7.1</span> Inleiding: specifieke problematiek middenpaleolithicum</a></li>
+  <li><a href="#overzicht-van-de-archeologische-kennis" id="toc-overzicht-van-de-archeologische-kennis" class="nav-link" data-scroll-target="#overzicht-van-de-archeologische-kennis"><span class="header-section-number">2.4.7.2</span> Overzicht van de archeologische kennis</a></li>
+  <li><a href="#de-vlaamse-vallei" id="toc-de-vlaamse-vallei" class="nav-link" data-scroll-target="#de-vlaamse-vallei"><span class="header-section-number">2.4.7.3</span> De Vlaamse Vallei</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#besluit" id="toc-besluit" class="nav-link" data-scroll-target="#besluit"><span class="toc-section-number">2.5</span>  Besluit</a></li>
+  <li><a href="#besluit" id="toc-besluit" class="nav-link" data-scroll-target="#besluit"><span class="header-section-number">2.5</span> Besluit</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/hanecakr/handleidingBooronderzoek/edit/main/02_bureauonderzoek.qmd" class="toc-action">Bewerk deze pagina</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ErfgoedPublicaties/AKOE-11-Booronderzoek/edit/main/02_bureauonderzoek.qmd" class="toc-action">Bewerk deze pagina</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -306,7 +337,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image6.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.1: Voorbeeld van een basiskaart van de bodemkaart op schaal 1:5000.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.1: Voorbeeld van een basiskaart van de bodemkaart op schaal 1:5000.</figcaption>
 </figure>
 </div>
 </section>
@@ -320,13 +351,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image7.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.2: Voorbeeld van een fiche van een profieltype.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.2: Voorbeeld van een fiche van een profieltype.</figcaption>
 </figure>
 </div>
 <div id="fig-2-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image8.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.3: Afgeleide isospachenkaarten van het quartair dek.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.3: Afgeleide isospachenkaarten van het quartair dek.</figcaption>
 </figure>
 </div>
 </section>
@@ -378,7 +409,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image13.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.6: Zone met een zichtbaar complexe morfologie (Opglabbekerzavel, gemeente Genk). 1: flauwe ZW-NO gerichte duinrug; 2: paraboolduin met grillige stuifzandmorfologie; 3: deflatiezone met kopjesduinen en stuifzandrugjes.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.6: Zone met een zichtbaar complexe morfologie (Opglabbekerzavel, gemeente Genk). 1: flauwe ZW-NO gerichte duinrug; 2: paraboolduin met grillige stuifzandmorfologie; 3: deflatiezone met kopjesduinen en stuifzandrugjes.</figcaption>
 </figure>
 </div>
 </section>
@@ -396,7 +427,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image14.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.7: Grote impact van huidig landgebruik: een laatglaciale duinrug is op het akkerperceel grotendeels afgegraven en genivelleerd (Meirberg te Meer, Hoogstraten).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.7: Grote impact van huidig landgebruik: een laatglaciale duinrug is op het akkerperceel grotendeels afgegraven en genivelleerd (Meirberg te Meer, Hoogstraten).</figcaption>
 </figure>
 </div>
 <div class="quarto-layout-panel">
@@ -405,7 +436,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image15.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.8: Door ploegen afgetopt profiel op de site Weelde Eindegoorheide, met een ploeglaag direct op de C-horizont van de natuurlijke bodem. De artefacten van deze opgraving kwamen zowel uit de ploeglaag als uit deze C-horizont.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.8: Door ploegen afgetopt profiel op de site Weelde Eindegoorheide, met een ploeglaag direct op de C-horizont van de natuurlijke bodem. De artefacten van deze opgraving kwamen zowel uit de ploeglaag als uit deze C-horizont.</figcaption>
 </figure>
 </div>
 </div>
@@ -413,7 +444,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image16.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.9: Grote lokale impact van grondverbeteringswerken op de bodem.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.9: Grote lokale impact van grondverbeteringswerken op de bodem.</figcaption>
 </figure>
 </div>
 </div>
@@ -423,7 +454,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-10" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image17.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.10: Impact van een eenmalige beploeging bij de omzetting van heide naar bos (Lindelse Heide, gemeente Pelt).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.10: Impact van een eenmalige beploeging bij de omzetting van heide naar bos (Lindelse Heide, gemeente Pelt).</figcaption>
 </figure>
 </div>
 </div>
@@ -460,25 +491,25 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-11" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image18.jpeg" class="img-fluid figure-img"> <img src="./figuren/image19.jpeg" class="img-fluid figure-img"> <img src="./figuren/image20.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.11: Het Digitaal Hoogtemodel Vlaanderen biedt een indicatie over de mate van nivellering van terreinen, bijvoorbeeld door vergelijking met zones in de regio onder bos, heide of historisch grasland (boven), vergelijking met historische kaarten (midden) en orthofoto’s (onder).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.11: Het Digitaal Hoogtemodel Vlaanderen biedt een indicatie over de mate van nivellering van terreinen, bijvoorbeeld door vergelijking met zones in de regio onder bos, heide of historisch grasland (boven), vergelijking met historische kaarten (midden) en orthofoto’s (onder).</figcaption>
 </figure>
 </div>
 <div id="fig-2-12" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image21.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.12: Voorbeeld van verschil tussen historisch bos en akker- en weilanden in de bewaring van de topografie en historische relicten in het landschap (Meerdaalwoud, Oud-Heverlee).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.12: Voorbeeld van verschil tussen historisch bos en akker- en weilanden in de bewaring van de topografie en historische relicten in het landschap (Meerdaalwoud, Oud-Heverlee).</figcaption>
 </figure>
 </div>
 <div id="fig-2-13" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image22.png" class="img-fluid figure-img"> <img src="./figuren/image23.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.13: De impact van eenmalig ploegen bij het omzetten van heide naar bos te Bocholt-Smeetshof. De top van de podzolbodem werd door de ploeg gekeerd, met een donkerdere grijze zone en schuine banden Ah-horizont tot gevolg (top). In het vlak (onder) is de ploegrichting herkenbaar.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.13: De impact van eenmalig ploegen bij het omzetten van heide naar bos te Bocholt-Smeetshof. De top van de podzolbodem werd door de ploeg gekeerd, met een donkerdere grijze zone en schuine banden Ah-horizont tot gevolg (top). In het vlak (onder) is de ploegrichting herkenbaar.</figcaption>
 </figure>
 </div>
 <div id="fig-2-14" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image24.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.14: De impact van rabatten en recent bosbeheer (bandensporen) onder bos (Kolisbos, Pelt).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.14: De impact van rabatten en recent bosbeheer (bandensporen) onder bos (Kolisbos, Pelt).</figcaption>
 </figure>
 </div>
 </section>
@@ -491,7 +522,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-15" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image25.png" class="img-fluid figure-img"> <img src="./figuren/image26.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.15: 3D weergave van Bandkeramische site van de ‘Sieberg’ met bewerkingserosiemodel (KULeuven 2006) en recente orthofoto. De zones met lichtere bodemverkleuringen stemmen overeen met de zones met gemodelleerde hoge potentiële bewerkingserosie.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.15: 3D weergave van Bandkeramische site van de ‘Sieberg’ met bewerkingserosiemodel (KULeuven 2006) en recente orthofoto. De zones met lichtere bodemverkleuringen stemmen overeen met de zones met gemodelleerde hoge potentiële bewerkingserosie.</figcaption>
 </figure>
 </div>
 </section>
@@ -504,7 +535,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-16" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image27.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.16: Model van Clarke (1963)<a href="#fn59" class="footnote-ref" id="fnref59" role="doc-noteref"><sup>59</sup></a>, naar een bewerking door Bloemers &amp; Van Dorp 1991.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.16: Model van Clarke (1963)<a href="#fn59" class="footnote-ref" id="fnref59" role="doc-noteref"><sup>59</sup></a>, naar een bewerking door Bloemers &amp; Van Dorp 1991.</figcaption>
 </figure>
 </div>
 <p>Het archeologisch archief van de prehistorische jager-verzamelaarsgemeenschappen is bovendien in zeer sterke mate bepaald door de partiële bewaring van sites en vondstcategorieën, lacunes in het onderzoek, moeilijkheden tot chronologisch houvast, enz. Voor de interpretatie van archeologische sites en vondsten wordt daarom dikwijls teruggegrepen naar antropologische studies en dus etnografische ‘parallellen’ (<em>middle range theory</em>). De literatuur en theorievorming hieromtrent is zeer uitgebreid. Eén van artikels die als klassieker van het genre wordt beschouwd is Lewis Binford’s artikel ‘<em>Willow smoke and dogs’ tails</em>’<a href="#fn60" class="footnote-ref" id="fnref60" role="doc-noteref"><sup>60</sup></a>, dat modellen van landgebruik opbouwt op basis van etnografische studies van verschillende jager-verzamelaars maatschappijen, rekening houdend met nederzettingspatronen, mobiliteit, grondstof- en voedselverwerking, enz<em>.</em> (<a href="#fig-2-17">fig.&nbsp;<span>2.17</span></a>). Van dergelijke modellen zijn uiteraard vele varianten mogelijk, afhankelijk van de gebruikte theoretische achtergrond, en van de periode of samenleving dat het onderwerp is van de studie<a href="#fn61" class="footnote-ref" id="fnref61" role="doc-noteref"><sup>61</sup></a>. Dergelijke modellen tonen alvast aan dat het archeologisch archief meer is dan een verzameling ‘<em>hotspots</em>’ (sites, meestal de ‘nederzettingen’), en de neerslag vormt van een continuüm van verschillende soorten activiteiten (<a href="#fig-2-18">fig.&nbsp;<span>2.18</span></a>) die zich in het hele landschap afspeelden<a href="#fn62" class="footnote-ref" id="fnref62" role="doc-noteref"><sup>62</sup></a>. Aspecten als mobiliteit, het verkrijgen van ‘grondstoffen’ (bijv. vuursteen), seizoenaliteit, enz. spelen hierin steeds een zekere rol<a href="#fn63" class="footnote-ref" id="fnref63" role="doc-noteref"><sup>63</sup></a>.</p>
@@ -513,13 +544,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-17" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image28.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.17: Binford 1980: voorbeeld van een ‘model’ van nederzettings- en activiteitensysteem van jager-verzamelaarsamenlevingen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.17: Binford 1980: voorbeeld van een ‘model’ van nederzettings- en activiteitensysteem van jager-verzamelaarsamenlevingen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-18" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-2-18.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.18: Enkele voorbeelden van verschillende jager-verzamelaarsactiviteiten, allen met een diverse archeologische ‘afdruk’. Links boven: reconstructie van een mesolithisch landschap en hut (Ierland)<a href="#fn68" class="footnote-ref" id="fnref68" role="doc-noteref"><sup>68</sup></a>. Rechts boven: jacht met pijl en boog bij de San<a href="#fn69" class="footnote-ref" id="fnref69" role="doc-noteref"><sup>69</sup></a>. Links onder: vuur maken bij de San<a href="#fn70" class="footnote-ref" id="fnref70" role="doc-noteref"><sup>70</sup></a>. Rechts onder: woonplaats van de Bayaka in het Dzanga Sangha Ndoki reservaat (Centraal Afrikaanse Republiek)<a href="#fn71" class="footnote-ref" id="fnref71" role="doc-noteref"><sup>71</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.18: Enkele voorbeelden van verschillende jager-verzamelaarsactiviteiten, allen met een diverse archeologische ‘afdruk’. Links boven: reconstructie van een mesolithisch landschap en hut (Ierland)<a href="#fn68" class="footnote-ref" id="fnref68" role="doc-noteref"><sup>68</sup></a>. Rechts boven: jacht met pijl en boog bij de San<a href="#fn69" class="footnote-ref" id="fnref69" role="doc-noteref"><sup>69</sup></a>. Links onder: vuur maken bij de San<a href="#fn70" class="footnote-ref" id="fnref70" role="doc-noteref"><sup>70</sup></a>. Rechts onder: woonplaats van de Bayaka in het Dzanga Sangha Ndoki reservaat (Centraal Afrikaanse Republiek)<a href="#fn71" class="footnote-ref" id="fnref71" role="doc-noteref"><sup>71</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -542,13 +573,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-19" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image33.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.19: Predictief model voor de aanwezigheid van steentijdsites, voor een regio in de Antwerpse Kempen (hoe donkerder, hoe hoger de verwachting), op basis van een combinatie van deductieve en inductieve modellering, en Bayesiaanse statistiek<a href="#fn86" class="footnote-ref" id="fnref86" role="doc-noteref"><sup>86</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.19: Predictief model voor de aanwezigheid van steentijdsites, voor een regio in de Antwerpse Kempen (hoe donkerder, hoe hoger de verwachting), op basis van een combinatie van deductieve en inductieve modellering, en Bayesiaanse statistiek<a href="#fn86" class="footnote-ref" id="fnref86" role="doc-noteref"><sup>86</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-20" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image34.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.20: Een ‘voorkeurslocatie’ in beeld gebracht naar aanleiding van de site Bazel-Sluis: een reconstructie van een nederzettingslocatie met ‘droge voeten’ in een rijke ecologische niche langs een rivier. Copyright afbeelding: agentschap Onroerend Erfgoed; realisatie: Ulco Glimmerveen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.20: Een ‘voorkeurslocatie’ in beeld gebracht naar aanleiding van de site Bazel-Sluis: een reconstructie van een nederzettingslocatie met ‘droge voeten’ in een rijke ecologische niche langs een rivier. Copyright afbeelding: agentschap Onroerend Erfgoed; realisatie: Ulco Glimmerveen.</figcaption>
 </figure>
 </div>
 </section>
@@ -567,7 +598,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-21" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image35.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.21: Afbakening van de diverse archeoregio’s zoals deze werd opgemaakt in functie van de ‘Onderzoeksbalans archeologie’</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.21: Afbakening van de diverse archeoregio’s zoals deze werd opgemaakt in functie van de ‘Onderzoeksbalans archeologie’</figcaption>
 </figure>
 </div>
 <p>Dit hoofdstuk biedt voor elke archeoregio een beknopt overzicht van de gekende steentijdarcheologie<a href="#fn90" class="footnote-ref" id="fnref90" role="doc-noteref"><sup>90</sup></a>, en van de relevante geomorfologie en bodems. Deze informatie vormt de beschikbare informatie voor het opmaken van een archeologische verwachting. Voor sommige archeoregio’s treden we in meer detail, bijvoorbeeld aan de hand van verder uitgewerkte voorbeelden van deelregio’s. Deze fungeren ter illustratie van de complexiteit van landschappen en hun evolutie doorheen de tijd.</p>
@@ -582,7 +613,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-22" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image36.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.22: Afbakening van de archeoregio’s Kempen en Zandstreek (blauw).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.22: Afbakening van de archeoregio’s Kempen en Zandstreek (blauw).</figcaption>
 </figure>
 </div>
 <section id="een-beknopt-overzicht-van-de-archeologische-kennis" class="level4" data-number="2.4.2.1">
@@ -592,7 +623,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-23" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image37.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.23: Gekende vondsten en sites van het fiaalpaleolithicum, mesolithicum en andere steentijdsites in Vlaanderen op basis van de CAI (geraadpleegd op 23-03-2022).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.23: Gekende vondsten en sites van het fiaalpaleolithicum, mesolithicum en andere steentijdsites in Vlaanderen op basis van de CAI (geraadpleegd op 23-03-2022).</figcaption>
 </figure>
 </div>
 <p>De eerste Kempense jagers-verzamelaarsvindplaatsen werden kort na 1900 beschreven. Deze trokken in de volgende decennia de eerste professionele onderzoekers aan, in de eerste plaats J. Hamal-Nandrin uit Luik. Hij voerde de eerste opgravingen uit te Zonhoven en Lommel<a href="#fn96" class="footnote-ref" id="fnref96" role="doc-noteref"><sup>96</sup></a>.</p>
@@ -612,7 +643,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-24" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image38.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.24: Afwateringspatroon van het Schelde- en Maasbekken in Vlaanderen geprojecteerd op het DHM Vlaanderen en afbakening van de archeoregio’s.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.24: Afwateringspatroon van het Schelde- en Maasbekken in Vlaanderen geprojecteerd op het DHM Vlaanderen en afbakening van de archeoregio’s.</figcaption>
 </figure>
 </div>
 <p>Het gebied kan onderverdeeld worden in twee rivierbekkens. Het Scheldebekken is het omvangrijkst, en omvat o.a. de valleien van de Schelde, Dijle, Demer, Leie, Nete en Zenne. De oppervlakte van het Maasbekken is beperkt in Vlaanderen en omvat een zone in de Noorderkempen en in het noorden en oosten van Limburg.</p>
@@ -627,7 +658,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-25" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image39.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.25: Algemene spreiding van het dekzandgebied in NW-Europa<a href="#fn120" class="footnote-ref" id="fnref120" role="doc-noteref"><sup>120</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.25: Algemene spreiding van het dekzandgebied in NW-Europa<a href="#fn120" class="footnote-ref" id="fnref120" role="doc-noteref"><sup>120</sup></a>.</figcaption>
 </figure>
 </div>
 <p>De dekzanden zijn in de literatuur gekend onder diverse benamingen. In Nederland werd in het verleden gesproken van het ‘Ouder’ en ‘Jonger’ dekzand, waarbij deze laatste term gebruikt wordt voor de afzettingen uit het laatglaciaal (zie 2.4.1.2.3). Zo identificeert Kasse<a href="#fn121" class="footnote-ref" id="fnref121" role="doc-noteref"><sup>121</sup></a> bijvoorbeeld Ouder dekzand I &amp; II (pleniglaciale dekzanden), en Jonger Dekzand I &amp; II (laatglaciale dekzanden). Tegenwoordig maken de dekzanden in de Nederlandse geologische terminologie lithostratigrafisch deel uit van de ‘<em>formatie van Boxtel</em>’, meer specifiek het ‘<em>Laagpakket van Wierden</em>’, waarbinnen verschillende onderverdelingen kunnen gemaakt worden<a href="#fn122" class="footnote-ref" id="fnref122" role="doc-noteref"><sup>122</sup></a>. In de Belgische quartairgeologische terminologie wordt het dekzand, dat deel uitmaakt van de ‘<em>formatie van Gent’,</em> onderverdeeld in de’<em>leden van Dilsen</em>, <em>Tisselt</em> en <em>Opgrimbie’</em>’<a href="#fn123" class="footnote-ref" id="fnref123" role="doc-noteref"><sup>123</sup></a>. Naar hun vorm en voorkomen worden de laatglaciale afzettingen ook wel ‘duinzanden’ genoemd.</p>
@@ -642,13 +673,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <figure class="figure">
 <p><img src="./figuren/image40.jpeg" class="img-fluid figure-img"></p>
 <p><img src="./figuren/image41.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.26: Voorbeelden van grote dekzandvormen op het DHM Vlaanderen: A) Dekzandvlaktes/ruggen ten noorden van de Nete, en doorsneden door beekvalleien bij Grobbendonk (driehoekje); B: de grote dekzandrug Maldegem-Stekene.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.26: Voorbeelden van grote dekzandvormen op het DHM Vlaanderen: A) Dekzandvlaktes/ruggen ten noorden van de Nete, en doorsneden door beekvalleien bij Grobbendonk (driehoekje); B: de grote dekzandrug Maldegem-Stekene.</figcaption>
 </figure>
 </div>
 <div id="fig-2-27" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image42.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.27: De regio van Mechelen-Battel op het DHM Vlaanderen, met de laatglaciale valleivloeren duidelijk zichtbaar. De dekzanden die deze valleien omranden vertonen op verschillende plaatsen duidelijke hoger gelegen ruggen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.27: De regio van Mechelen-Battel op het DHM Vlaanderen, met de laatglaciale valleivloeren duidelijk zichtbaar. De dekzanden die deze valleien omranden vertonen op verschillende plaatsen duidelijke hoger gelegen ruggen.</figcaption>
 </figure>
 </div>
 </section>
@@ -660,13 +691,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-28" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image43.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.28: Systeem van laatglaciale paraboolduinen (wellicht enigszins aangetast door latere verstuivingen), zichtbaar op het DHM Vlaanderen ten westen van Postel (Mol).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.28: Systeem van laatglaciale paraboolduinen (wellicht enigszins aangetast door latere verstuivingen), zichtbaar op het DHM Vlaanderen ten westen van Postel (Mol).</figcaption>
 </figure>
 </div>
 <div id="fig-2-29" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image44.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.29: Enkele voorbeelden van laatglaciale duinruggen. A: Te Herentals-Vuilvoort-Addernesten<a href="#fn129" class="footnote-ref" id="fnref129" role="doc-noteref"><sup>129</sup></a> (); B Ravels Witgoor; C: Rug van Mendonk aan de Moervaartdepressie; D: De Korhaan in Landschap De liereman te Oud-Turnhout en Arendonk.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.29: Enkele voorbeelden van laatglaciale duinruggen. A: Te Herentals-Vuilvoort-Addernesten<a href="#fn129" class="footnote-ref" id="fnref129" role="doc-noteref"><sup>129</sup></a> (); B Ravels Witgoor; C: Rug van Mendonk aan de Moervaartdepressie; D: De Korhaan in Landschap De liereman te Oud-Turnhout en Arendonk.</figcaption>
 </figure>
 </div>
 </section>
@@ -679,31 +710,31 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-30" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image45.jpeg" class="img-fluid figure-img"> <img src="./figuren/image46.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.30: Stuifzandgebieden. Boven: Stuifzandgebied te Achterbos Heide in Mol op kaart van het Dépot de la Guerre (1<sup>e</sup> reeks, ca. 1870); Onder: Stuifzandgebied op DHMV.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.30: Stuifzandgebieden. Boven: Stuifzandgebied te Achterbos Heide in Mol op kaart van het Dépot de la Guerre (1<sup>e</sup> reeks, ca. 1870); Onder: Stuifzandgebied op DHMV.</figcaption>
 </figure>
 </div>
 <div id="fig-2-31" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image47.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.31: Detailbeeld van hoge resolutie hillshade verwerking van het DHMII van een stuifzandgebied met grote variabiliteit aan vormen (Pijnvennerheide te Eksel).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.31: Detailbeeld van hoge resolutie hillshade verwerking van het DHMII van een stuifzandgebied met grote variabiliteit aan vormen (Pijnvennerheide te Eksel).</figcaption>
 </figure>
 </div>
 <div id="fig-2-32" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image48.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.32: Schematische doorsnede doorheen stuifzandzone in Mol, met gedeeltelijke afdekking van het dekzandreliëf en zones met geërodeerd (uitgestoven) dekzand<a href="#fn138" class="footnote-ref" id="fnref138" role="doc-noteref"><sup>138</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.32: Schematische doorsnede doorheen stuifzandzone in Mol, met gedeeltelijke afdekking van het dekzandreliëf en zones met geërodeerd (uitgestoven) dekzand<a href="#fn138" class="footnote-ref" id="fnref138" role="doc-noteref"><sup>138</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-33" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image49.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.33: Afgedekte podzolbodem onder een laag stuifzand te Lommel. De podzolbodem bevatte een goed bewaarde mesolithische site<a href="#fn139" class="footnote-ref" id="fnref139" role="doc-noteref"><sup>139</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.33: Afgedekte podzolbodem onder een laag stuifzand te Lommel. De podzolbodem bevatte een goed bewaarde mesolithische site<a href="#fn139" class="footnote-ref" id="fnref139" role="doc-noteref"><sup>139</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-34" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image50.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.34: Meerdere boven elkaar gelegen podzolbodems, begraven onder een laag duinzand te Lommel-Vlasstraat (©BAAC Vlaanderen)<a href="#fn140" class="footnote-ref" id="fnref140" role="doc-noteref"><sup>140</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.34: Meerdere boven elkaar gelegen podzolbodems, begraven onder een laag duinzand te Lommel-Vlasstraat (©BAAC Vlaanderen)<a href="#fn140" class="footnote-ref" id="fnref140" role="doc-noteref"><sup>140</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -728,33 +759,33 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-35" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image51.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.35: Typische goed ontwikkelde en onverstoorde podzolbodem te Meeuwen-Monnikswijer.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.35: Typische goed ontwikkelde en onverstoorde podzolbodem te Meeuwen-Monnikswijer.</figcaption>
 </figure>
 </div>
 <div id="fig-2-36" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image52.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.36: Goed ontwikkelde podzolbodem met uitgesproken E- en B-horizonten in de opgraving van Opgrimbie Onder De Berg in Maasmechelen (©Eenheid Prehistorische Archeologie, KU Leuven).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.36: Goed ontwikkelde podzolbodem met uitgesproken E- en B-horizonten in de opgraving van Opgrimbie Onder De Berg in Maasmechelen (©Eenheid Prehistorische Archeologie, KU Leuven).</figcaption>
 </figure>
 </div>
 <div id="fig-2-37" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image53.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.37: Podzolbodem, gedeeltelijk bewaard onder een ploeglaag, te Merksplas-Hoekeinde.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.37: Podzolbodem, gedeeltelijk bewaard onder een ploeglaag, te Merksplas-Hoekeinde.</figcaption>
 </figure>
 </div>
 <div id="fig-2-38" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image54.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.38: Verticale artefactspreiding van de vroegmesolithische site Meer Meirberg 6. Alle artefacten werden door de prehistorische mens achtergelaten op het huidige maaiveld, maar raakten tot een diepte van 40 cm verspreid in de podzolbodem<a href="#fn143" class="footnote-ref" id="fnref143" role="doc-noteref"><sup>143</sup></a>.<br>
+<figcaption class="figure-caption">Figuur&nbsp;2.38: Verticale artefactspreiding van de vroegmesolithische site Meer Meirberg 6. Alle artefacten werden door de prehistorische mens achtergelaten op het huidige maaiveld, maar raakten tot een diepte van 40 cm verspreid in de podzolbodem<a href="#fn143" class="footnote-ref" id="fnref143" role="doc-noteref"><sup>143</sup></a>.<br>
 <em>Legende</em><br>
-1: lithisch artefact 2: uitlogingshorizont (E) 3: humus aanreikingshorizont (Bh) 4: ijzer aanreikingshorizont (Bir) 5: C-horizont</figcaption><p></p>
+1: lithisch artefact 2: uitlogingshorizont (E) 3: humus aanreikingshorizont (Bh) 4: ijzer aanreikingshorizont (Bir) 5: C-horizont</figcaption>
 </figure>
 </div>
 <div id="fig-2-39" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image55.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.39: Zwak ontwikkelde podzolbodem te Antwerpen-Korneel Franckstraat<a href="#fn144" class="footnote-ref" id="fnref144" role="doc-noteref"><sup>144</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.39: Zwak ontwikkelde podzolbodem te Antwerpen-Korneel Franckstraat<a href="#fn144" class="footnote-ref" id="fnref144" role="doc-noteref"><sup>144</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -765,13 +796,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-40" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image56.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.40: Bodem met onder de ploeglaag een humeuze aanreikingshorizont van ongeveer 20cm dikte (foto: R. Langohr).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.40: Bodem met onder de ploeglaag een humeuze aanreikingshorizont van ongeveer 20cm dikte (foto: R. Langohr).</figcaption>
 </figure>
 </div>
 <div id="fig-2-41" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image57.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.41: Bodem met Bh-horizont te Bazel-Sluis.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.41: Bodem met Bh-horizont te Bazel-Sluis.</figcaption>
 </figure>
 </div>
 </section>
@@ -782,7 +813,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-42" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image58.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.42: Verspreiding van complexen van ‘bodems met diepe antropogene humus A-horizont’ aan de hand van de bodemassociatiekaart bij Mol en Balen, geprojecteerd op de Ferrariskaart.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.42: Verspreiding van complexen van ‘bodems met diepe antropogene humus A-horizont’ aan de hand van de bodemassociatiekaart bij Mol en Balen, geprojecteerd op de Ferrariskaart.</figcaption>
 </figure>
 </div>
 <p>Soms wordt verondersteld dat de intensiteit van initiële bewerking (diepspitten) bij de ontwikkeling van deze bodems het oorspronkelijk bodemprofiel heeft afgetopt (<a href="#fig-2-44">fig.&nbsp;<span>2.44</span></a> en <a href="#fig-2-45">fig.&nbsp;<span>2.45</span></a>), waardoor de kans op goed bewaarde steentijd artefactensites in deze gebieden zeer klein zou zijn. Dit is echter zeker niet altijd zo. Het oorspronkelijke reliëf werd vaak in zekere mate geëgaliseerd, waarbij de oorspronkelijke bodem, bijvoorbeeld een podzolbodem, bijvoorbeeld in opgevulde lagere delen nog heel gaaf bewaard kan zijn. Op die plaatsen heeft het plaggendek een afdekkende, conserverende werking gehad (<a href="#fig-2-46">fig.&nbsp;<span>2.46</span></a>). Indien de natuurlijke bodem (gedeeltelijk) werd opgenomen in een plaggenbodem, en hierin meerdere bewerkingsfasen aanwezig zijn, kan je steentijd artefacten vooral in de onderste/oudste bewerkingsfase verwachten (naast natuurlijk in het restant van de natuurlijke bodem).</p>
@@ -790,25 +821,25 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-43" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image59.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.43: Bodem met dikke antropogene humeuze A-horizont waarin verschillende akkerlagen te herkennen zijn, en met bewaring van een podzolbodem eronder (foto: R. Langohr).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.43: Bodem met dikke antropogene humeuze A-horizont waarin verschillende akkerlagen te herkennen zijn, en met bewaring van een podzolbodem eronder (foto: R. Langohr).</figcaption>
 </figure>
 </div>
 <div id="fig-2-44" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image60.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.44: Bodem met dikke antropogene humus A-horizont met afgetopt oorspronkelijk bodemprofiel te Herentals-Paradijsstraat<a href="#fn148" class="footnote-ref" id="fnref148" role="doc-noteref"><sup>148</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.44: Bodem met dikke antropogene humus A-horizont met afgetopt oorspronkelijk bodemprofiel te Herentals-Paradijsstraat<a href="#fn148" class="footnote-ref" id="fnref148" role="doc-noteref"><sup>148</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-45" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image61.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.45: Bodem met dikke antropogene humus A-horizont, waarin verschillende akkerlagen te herkennen zijn, met eronder een afgetopte natuurlijke bodem<a href="#fn149" class="footnote-ref" id="fnref149" role="doc-noteref"><sup>149</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.45: Bodem met dikke antropogene humus A-horizont, waarin verschillende akkerlagen te herkennen zijn, met eronder een afgetopte natuurlijke bodem<a href="#fn149" class="footnote-ref" id="fnref149" role="doc-noteref"><sup>149</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-46" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image62.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.46: In een lager deel van het vroegere landschap te Merksplas-Hoekeinde werd een podzolbodem afgedekt door een 50 cm dikke ploeglaag. Ter hoogte van de rode cirkel bevindt zich een vuurstenen artefact in het profiel<a href="#fn150" class="footnote-ref" id="fnref150" role="doc-noteref"><sup>150</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.46: In een lager deel van het vroegere landschap te Merksplas-Hoekeinde werd een podzolbodem afgedekt door een 50 cm dikke ploeglaag. Ter hoogte van de rode cirkel bevindt zich een vuurstenen artefact in het profiel<a href="#fn150" class="footnote-ref" id="fnref150" role="doc-noteref"><sup>150</sup></a>.</figcaption>
 </figure>
 </div>
 <p>De <strong>bolle akkers</strong> van het Waasland worden op de bodemkaart eveneens met profielontwikkeling ‘m’ aangeduid. Deze akkers zijn eveneens goed te herkennen op het Digitaal Hoogtemodel Vlaanderen (<a href="#fig-2-47">fig.&nbsp;<span>2.47</span></a>). Anders dan de plaggenbodems zijn deze bolle akkers het resultaat van een doelbewuste en grootschalige ontginning in de 15-16de eeuw. Hierbij werden de randen van de akkers weggegraven en errond grachten aangelegd (<a href="#fig-2-48">fig.&nbsp;<span>2.48</span></a>). Met deze grond werd het centrale deel van de akker opgehoogd.</p>
@@ -816,14 +847,14 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-47" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image63.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.47: Complex van bolle akkers in het Waasland op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.47: Complex van bolle akkers in het Waasland op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-48" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image64.png" class="img-fluid figure-img"></p>
 <p><img src="./figuren/image65.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.48: Schematische doorsnedes van de oorspronkelijke bolle akkers (boven) en hun recente toestand (onder)<a href="#fn152" class="footnote-ref" id="fnref152" role="doc-noteref"><sup>152</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.48: Schematische doorsnedes van de oorspronkelijke bolle akkers (boven) en hun recente toestand (onder)<a href="#fn152" class="footnote-ref" id="fnref152" role="doc-noteref"><sup>152</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -844,62 +875,62 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <p><img src="./figuren/image66.jpeg" class="img-fluid figure-img"></p>
 <p><img src="./figuren/image67.jpeg" class="img-fluid figure-img"></p>
 <p><img src="./figuren/image68.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.49: Variatie in het voorkomen van de Usselobodem op composietfoto’s van profielen te Lommel-Maatheide: A: Typische Usselobodem met witte uitlogingshorizont, met relatief veel vlekken houtskoolstof en -partikels in de top. De bodem dagzoomt links op de foto. De top van het bodemprofiel is getrunceerd door recente verstoring, waardoor de holocene podzolbodem is verdwenen. B: Enkele tientallen meters verderop daalt het laatglaciaal oppervlak geleidelijk naar een ven. De uitlogingshorizont is hier iets donkerder en het houtskoolrijk niveau dunner maar denser, bijna als een laag op de uitlogingshorizont. C: Nog enkele tientallen meters verder, en opnieuw lager in de laatglaciale topografie, is de uitlogingshorizont merkbaar dunner en vager. Er is nog maar weinig houtskool aanwezig (de dunne zwarte banden werden gevormd door humusaanreiking bij de vorming van de holocene podzolvorming, waarvan de B-horizont rechtsboven nog bewaard is.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.49: Variatie in het voorkomen van de Usselobodem op composietfoto’s van profielen te Lommel-Maatheide: A: Typische Usselobodem met witte uitlogingshorizont, met relatief veel vlekken houtskoolstof en -partikels in de top. De bodem dagzoomt links op de foto. De top van het bodemprofiel is getrunceerd door recente verstoring, waardoor de holocene podzolbodem is verdwenen. B: Enkele tientallen meters verderop daalt het laatglaciaal oppervlak geleidelijk naar een ven. De uitlogingshorizont is hier iets donkerder en het houtskoolrijk niveau dunner maar denser, bijna als een laag op de uitlogingshorizont. C: Nog enkele tientallen meters verder, en opnieuw lager in de laatglaciale topografie, is de uitlogingshorizont merkbaar dunner en vager. Er is nog maar weinig houtskool aanwezig (de dunne zwarte banden werden gevormd door humusaanreiking bij de vorming van de holocene podzolvorming, waarvan de B-horizont rechtsboven nog bewaard is.</figcaption>
 </figure>
 </div>
 <div id="fig-2-50" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image69.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.50: Usselobodem te Arendonk-Korhaan in Landschap De Liereman. Deze vormde zich tijdens de Allerød op een laatglaciale duin (bemerk de schuine gelaagdheid, gevormd op de valhelling aan de lijzijde van de duin), en werd afgedekt door een laag zand dat lokaal verstoof tijdens de Jonge Dryas. Daarin vormde zich later een podzolbodem, hier lokaal licht verstoord.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.50: Usselobodem te Arendonk-Korhaan in Landschap De Liereman. Deze vormde zich tijdens de Allerød op een laatglaciale duin (bemerk de schuine gelaagdheid, gevormd op de valhelling aan de lijzijde van de duin), en werd afgedekt door een laag zand dat lokaal verstoof tijdens de Jonge Dryas. Daarin vormde zich later een podzolbodem, hier lokaal licht verstoord.</figcaption>
 </figure>
 </div>
 <div id="fig-2-51" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image70.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.51: Podzolbodem in de top van een landduin te Grobbendonk-Melkerijstraat, met daaronder een Usselobodem<a href="#fn173" class="footnote-ref" id="fnref173" role="doc-noteref"><sup>173</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.51: Podzolbodem in de top van een landduin te Grobbendonk-Melkerijstraat, met daaronder een Usselobodem<a href="#fn173" class="footnote-ref" id="fnref173" role="doc-noteref"><sup>173</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-52" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image71.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.52: Usselobodem ter Lommel-Maatheide. In de wand rechts op de foto hebben aanrijkingsverschijnselen van de latere podzolbodem zich door de Usselobodem heen gevormd. In de wand links is de Usselobodem onaangetast.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.52: Usselobodem ter Lommel-Maatheide. In de wand rechts op de foto hebben aanrijkingsverschijnselen van de latere podzolbodem zich door de Usselobodem heen gevormd. In de wand links is de Usselobodem onaangetast.</figcaption>
 </figure>
 </div>
 <div id="fig-2-53" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image72.jpeg" class="img-fluid figure-img"> <img src="./figuren/image73.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.53: De Usselobodem wordt geleidelijk onzichtbaar naarmate hij de (recent verstoorde) podzolbodem nadert in een profielsleuf te Lommel-Maatheide. De foto’s werden vanuit weerszijden van de sleuf genomen. De Usselobodem is duidelijk zichtbaar rechts op de foto’s (achteraan op de bovenste foto, op de voorgrond in de onderste), maar niet meer aan het andere einde van de sleuf (voorgrond bovenste foto).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.53: De Usselobodem wordt geleidelijk onzichtbaar naarmate hij de (recent verstoorde) podzolbodem nadert in een profielsleuf te Lommel-Maatheide. De foto’s werden vanuit weerszijden van de sleuf genomen. De Usselobodem is duidelijk zichtbaar rechts op de foto’s (achteraan op de bovenste foto, op de voorgrond in de onderste), maar niet meer aan het andere einde van de sleuf (voorgrond bovenste foto).</figcaption>
 </figure>
 </div>
 <div id="fig-2-54" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image74.jpeg" class="img-fluid figure-img"></p>
 <p><img src="./figuren/image75.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.54: Op de rand van een laatglaciaal ven te Lommel-Maatheide gaat de Usselobodem (rechts) over in een veenlaag (links).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.54: Op de rand van een laatglaciaal ven te Lommel-Maatheide gaat de Usselobodem (rechts) over in een veenlaag (links).</figcaption>
 </figure>
 </div>
 <div id="fig-2-55" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image76.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.55: De Usselobodem (boven) en Opgrimbiebodem (onder) te Opgrimbie-Kikbeek. Bovenaan de foto, achter de wortels, is nog net de B-horizont van de holocene podzolbodem zichtbaar. De rode cirkel duidt een vuurstenen artefact aan dat in het profiel werd aangetroffen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.55: De Usselobodem (boven) en Opgrimbiebodem (onder) te Opgrimbie-Kikbeek. Bovenaan de foto, achter de wortels, is nog net de B-horizont van de holocene podzolbodem zichtbaar. De rode cirkel duidt een vuurstenen artefact aan dat in het profiel werd aangetroffen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-56" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image77.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.56: Bemonstering van een paleobodem (Allerød) onder duinzanden (verschillende fasen van opstuiving; Jonge Dryas) in een werfput in de Sint-Jozefkerk van Battel (Mechelen)<a href="#fn174" class="footnote-ref" id="fnref174" role="doc-noteref"><sup>174</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.56: Bemonstering van een paleobodem (Allerød) onder duinzanden (verschillende fasen van opstuiving; Jonge Dryas) in een werfput in de Sint-Jozefkerk van Battel (Mechelen)<a href="#fn174" class="footnote-ref" id="fnref174" role="doc-noteref"><sup>174</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-57" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image78.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.57: Verbrokkelde paleobodem te Nijlen-Varenheuvel.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.57: Verbrokkelde paleobodem te Nijlen-Varenheuvel.</figcaption>
 </figure>
 </div>
 <div id="fig-2-58" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image79.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.58: Paleobodem met een vage donkere (humeuze) horizont, geassocieerd met finaalpaleolithische of vroegmesolithische artefacten, te Wichelen-Bergenmeersen<a href="#fn175" class="footnote-ref" id="fnref175" role="doc-noteref"><sup>175</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.58: Paleobodem met een vage donkere (humeuze) horizont, geassocieerd met finaalpaleolithische of vroegmesolithische artefacten, te Wichelen-Bergenmeersen<a href="#fn175" class="footnote-ref" id="fnref175" role="doc-noteref"><sup>175</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -912,13 +943,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-59" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image80.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.59: De riviervalleien op basis van de bodemkaart (profielontwikkeling -p).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.59: De riviervalleien op basis van de bodemkaart (profielontwikkeling -p).</figcaption>
 </figure>
 </div>
 <div id="fig-2-60" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image81.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.60: Laatglaciale meanderlus van Overmere op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen, met aanduiding van alluviale gronden op basis van de bodemassociatiekaart.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.60: Laatglaciale meanderlus van Overmere op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen, met aanduiding van alluviale gronden op basis van de bodemassociatiekaart.</figcaption>
 </figure>
 </div>
 <p>Het ‘potentieel’ van de rivier- en beekvalleien voor de aanwezigheid en het onderzoek van steentijd artefactensites is bijzonder groot<a href="#fn177" class="footnote-ref" id="fnref177" role="doc-noteref"><sup>177</sup></a>. Deze gebieden kenden in de loop van het finaalpaleolithicum tot neolithicum immers een bijzonder rijke biodiversiteit, en waren voor de prehistorische mens dan ook bijzonder aantrekkelijk voor bewoning en andere activiteiten. Bovendien biedt een eventuele afdekking door latere alluviale sedimenten kans op bijzonder goed bewaarde sites, terwijl waterverzadigde contexten de mogelijkheden bieden voor bewaring van organische materialen en ecofacten, en de studie van het paleomilieu (zie 2.4.2.3).</p>
@@ -930,14 +961,14 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-61" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image82.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.61: Benen spitsen uit de collectie van Georges Hasse (MAS-Antwerpen), opgebaggerd uit de Schelde ter hoogte van Wichelen<a href="#fn181" class="footnote-ref" id="fnref181" role="doc-noteref"><sup>181</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.61: Benen spitsen uit de collectie van Georges Hasse (MAS-Antwerpen), opgebaggerd uit de Schelde ter hoogte van Wichelen<a href="#fn181" class="footnote-ref" id="fnref181" role="doc-noteref"><sup>181</sup></a>.</figcaption>
 </figure>
 </div>
 <p>Vrij veel mesolithische en neolithische artefacten in been of gewei werden aangetroffen bij baggerwerken in het Scheldebekken, voornamelijk in de Beneden Schelde tussen Gent en Antwerpen, de sluis bij Wintam aan de Rupel, en in de buurt van Battel te Mechelen<a href="#fn182" class="footnote-ref" id="fnref182" role="doc-noteref"><sup>182</sup></a>. Een bijzonder grote concentratie aan dergelijke objecten, daterend uit verschillende periodes (laatmesolithicum tot middenneolithicum, mogelijk ook nog andere periodes), werd aangetroffen op de site van de ‘<em>Paardeweide</em>’ te Wichelen<a href="#fn183" class="footnote-ref" id="fnref183" role="doc-noteref"><sup>183</sup></a>. Dit ensemble toont de grote variatie aan objecten, met de typische werktuigen als geweibijlen, maar ook met productieafval in alle stadia van bewerking (<a href="#fig-2-62">fig.&nbsp;<span>2.62</span></a>). Tot op heden werd een dergelijk ensemble met enige omvang in Vlaanderen nog maar één keer <em>in situ</em> opgegraven, op de site van Bazel-Sluis<a href="#fn184" class="footnote-ref" id="fnref184" role="doc-noteref"><sup>184</sup></a>.</p>
 <div id="fig-2-62" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image83.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.62: Enkele hertshoornen artefacten afkomstig van de site ‘Paardeweide’</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.62: Enkele hertshoornen artefacten afkomstig van de site ‘Paardeweide’</figcaption>
 </figure>
 </div>
 <p>Systematisch prospectieonderzoek in de valleien van het Scheldebekken startte in feite pas rond 2006, met de inzet van archeologische boringen als prospectiemethodiek<a href="#fn185" class="footnote-ref" id="fnref185" role="doc-noteref"><sup>185</sup></a>. De resultaten van deze projecten gecombineerd met de gegevens van een beperkt aantal oudere terreinonderzoeken<a href="#fn186" class="footnote-ref" id="fnref186" role="doc-noteref"><sup>186</sup></a> toonden al snel het potentieel van deze valleicontexten voor het archeologisch onderzoek<a href="#fn187" class="footnote-ref" id="fnref187" role="doc-noteref"><sup>187</sup></a>. Ook in de periode 2006-2007 werd in de vallei van de Kleine Nete naar aanleiding van enkele oppervlaktevondsten een prospectie- en opgravingscampagne uitgevoerd, waarbij naast mesolithische artefacten een vermoedelijk laatglaciaal site geassocieerd met een paleobodem werd aangetroffen<a href="#fn188" class="footnote-ref" id="fnref188" role="doc-noteref"><sup>188</sup></a>.</p>
@@ -946,7 +977,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-63" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image84.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.63: Opgraving van de site Bazel-Sluis (2011), gelegen op een zandrug nabij de vroegere Scheldeloop, afgedekt door veen en klei.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.63: Opgraving van de site Bazel-Sluis (2011), gelegen op een zandrug nabij de vroegere Scheldeloop, afgedekt door veen en klei.</figcaption>
 </figure>
 </div>
 <p>Een andere belangrijke recente opgraving in alluviale context werd uitgevoerd te ‘Kerkhove-Stuw’<a href="#fn193" class="footnote-ref" id="fnref193" role="doc-noteref"><sup>193</sup></a>. Hier werden concentraties van lithisch materiaal en faunaresten uit diverse periodes in het mesolithicum aangetroffen op de rug van een uitgestrekte oeverwal die de loop van een fossiele geul van de Schelde flankeerde. Een beperkt aantal vondsten wees ook op aanwezigheid in het (midden) neolithicum. Aan de hand van de studie van de sedimenten van de geulvulling in de opgravingszone en aan de hand van monsternames met Begemann boringen in de diepere gedeelten van de geul buiten de opgravingsszone, kon het landschap en milieu tijdens de prehistorie goed worden gereconstrueerd<a href="#fn194" class="footnote-ref" id="fnref194" role="doc-noteref"><sup>194</sup></a>.</p>
@@ -974,43 +1005,43 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-64" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image85.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.64: Voorbeeld van een vlechtend riviersysteem (bron: wikimedia commons, auteur: Nin Mc Phee).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.64: Voorbeeld van een vlechtend riviersysteem (bron: wikimedia commons, auteur: Nin Mc Phee).</figcaption>
 </figure>
 </div>
 <div id="fig-2-65" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image86.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.65: voorbeeld van een meanderend riviersysteem (bron: wikimedia commons).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.65: voorbeeld van een meanderend riviersysteem (bron: wikimedia commons).</figcaption>
 </figure>
 </div>
 <div id="fig-2-66" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image87.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.66: Beneden-Schelde vallei tussen Antwerpen en Gent op het DHM: de rivierterrassen zijn duidelijk begrensd met op diverse plaatsen duidelijke aanwezigheid van meanderlussen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.66: Beneden-Schelde vallei tussen Antwerpen en Gent op het DHM: de rivierterrassen zijn duidelijk begrensd met op diverse plaatsen duidelijke aanwezigheid van meanderlussen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-67" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image88.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.67: Systeem van breed meanderend riviersysteem met vorming van Kronkelwaardruggen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.67: Systeem van breed meanderend riviersysteem met vorming van Kronkelwaardruggen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-68" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image89.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.68: Schematische laterale doorsnede van een valleivloer met kronkelwaardruggen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.68: Schematische laterale doorsnede van een valleivloer met kronkelwaardruggen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-69" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image90.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.69: Voorbeeld van een ‘crevasse’ doorbraak.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.69: Voorbeeld van een ‘crevasse’ doorbraak.</figcaption>
 </figure>
 </div>
 <div id="fig-2-70" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image91.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.70: Voorbeeld van een actieve overstromingsvlakte.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.70: Voorbeeld van een actieve overstromingsvlakte.</figcaption>
 </figure>
 </div>
 </section>
@@ -1025,7 +1056,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-71" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image92.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.71: Reconstructie van het landschap en de loop van de Schelde tijdens het Boreaal ter hoogte van de site Kerkhove-Stuw<a href="#fn206" class="footnote-ref" id="fnref206" role="doc-noteref"><sup>206</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.71: Reconstructie van het landschap en de loop van de Schelde tijdens het Boreaal ter hoogte van de site Kerkhove-Stuw<a href="#fn206" class="footnote-ref" id="fnref206" role="doc-noteref"><sup>206</sup></a>.</figcaption>
 </figure>
 </div>
 <p>Hierdoor werden delen van de laatglaciale rivierterassen omgevormd tot brede, moerassige vlaktes. Pollenonderzoek wijst in deze periode dan ook op de ontwikkeling van uitgestrekte moerasbossen (elzenbroekbossen)<a href="#fn207" class="footnote-ref" id="fnref207" role="doc-noteref"><sup>207</sup></a>. In deze periode waren er wellicht geen grote meanderende rivierlopen in deze vlaktes aanwezig, maar bestond het regime uit een vlechtend riviersysteem van kleinere geultjes (<a href="#fig-2-76">fig.&nbsp;<span>2.76</span></a>). Op verschillende plaatsen binnen het alluviaal terras vond veenvorming plaats, of werden overstromingssedimenten afgezet. Vanaf ca 4000 BP wordt de menselijke invloed in het Scheldebekken (ontbossing, akkerbouw, …) duidelijk zichtbaar, wat zich uitte in de afzetting van meer klastische sedimenten<a href="#fn208" class="footnote-ref" id="fnref208" role="doc-noteref"><sup>208</sup></a>.</p>
@@ -1034,37 +1065,37 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-72" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image93.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.72: 3D DHM beeld van een deel van de Dijlevallei tussen Mechelen en Leuven, met een duidelijke begrenzing van het alluviaal terras en relicten van laatglaciale meanderlussen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.72: 3D DHM beeld van een deel van de Dijlevallei tussen Mechelen en Leuven, met een duidelijke begrenzing van het alluviaal terras en relicten van laatglaciale meanderlussen.</figcaption>
 </figure>
 </div>
 <div id="fig-2-73" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image94.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.73: Reeks 14C dateringen van opvullings- en andere sedimenten in de valleien van de Beneden-Schelde en corresponderende trends<a href="#fn213" class="footnote-ref" id="fnref213" role="doc-noteref"><sup>213</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.73: Reeks 14C dateringen van opvullings- en andere sedimenten in de valleien van de Beneden-Schelde en corresponderende trends<a href="#fn213" class="footnote-ref" id="fnref213" role="doc-noteref"><sup>213</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-74" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image95.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.74: Schematische weergave van de evolutie van de riviervalleien van het Beneden-Scheldebekken in de loop van het laatglaciaal en holoceen<a href="#fn214" class="footnote-ref" id="fnref214" role="doc-noteref"><sup>214</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.74: Schematische weergave van de evolutie van de riviervalleien van het Beneden-Scheldebekken in de loop van het laatglaciaal en holoceen<a href="#fn214" class="footnote-ref" id="fnref214" role="doc-noteref"><sup>214</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-75" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image96.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.75: voorbeeld van een moerasbos (referentiebeeld Subboreaal).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.75: voorbeeld van een moerasbos (referentiebeeld Subboreaal).</figcaption>
 </figure>
 </div>
 <div id="fig-2-76" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image97.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.76: Systeem van kleinere geultjes opgevuld met zand in de holocene overstromingsvlakte (Bergenmeersen, Wichelen)<a href="#fn215" class="footnote-ref" id="fnref215" role="doc-noteref"><sup>215</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.76: Systeem van kleinere geultjes opgevuld met zand in de holocene overstromingsvlakte (Bergenmeersen, Wichelen)<a href="#fn215" class="footnote-ref" id="fnref215" role="doc-noteref"><sup>215</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-77" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image98.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.77: Kronkelwaardafzettigen en geassocieerd geultje uit de periode van het vroeg-subatlanticum in de Sigma zone ‘Wijmeersen’<a href="#fn216" class="footnote-ref" id="fnref216" role="doc-noteref"><sup>216</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.77: Kronkelwaardafzettigen en geassocieerd geultje uit de periode van het vroeg-subatlanticum in de Sigma zone ‘Wijmeersen’<a href="#fn216" class="footnote-ref" id="fnref216" role="doc-noteref"><sup>216</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1074,14 +1105,14 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-78" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image99.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.78: Depressie van de Moervaart op het Digitaal Hoogtemodel Vlaanderen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.78: Depressie van de Moervaart op het Digitaal Hoogtemodel Vlaanderen.</figcaption>
 </figure>
 </div>
 <p>De onderzoeken tonen aan dat het meer vrij ondiep was, met een maximale dikte van de meersedimenten ter hoogte van Moerbeke ‘Suikerfabriek’ van ca. 2 m. Een belangrijke sequentie bevindt zich eveneens bij Klein-Sinaai Boudelo<a href="#fn220" class="footnote-ref" id="fnref220" role="doc-noteref"><sup>220</sup></a>. Naar de aanwezigheid van de zaden van een aantal plantensoorten (o.a. waterlelie) en andere aquatische indicatoren (diatomeeën, macrophyten, …) was de maximum diepte van het meer ca. 3 tot 4 m. De meersedimenten zijn opgebouwd met een alternatie van kalkrijke gyttja afzettingen en meer humeuze/venige sedimenten. Aan de hand van 14C dateringen op deze afzettingen is duidelijk dat het meer bestond tijdens nagenoeg de volledige periode van het laatglaciaal, van ca. 14890 tot ca. 13255 cal BP (jaren vóór heden). Tijdens de warmere Allerød periode kende het meer wellicht zijn grootste omvang en diepte. Vanaf het einde van de Allerød en tijdens de daaropvolgende koude Jonge Dryas fase droogde het meer op.</p>
 <div id="fig-2-79" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image100.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.79: Sleuf doorheen de meersedimenten van de Moervaartdepressie (foto: UGent).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.79: Sleuf doorheen de meersedimenten van de Moervaartdepressie (foto: UGent).</figcaption>
 </figure>
 </div>
 <p>In het westelijke gedeelte van de depressie is een anastomoserend netwerk van vroegere kleine (ca. 15 tot 20 m breed en tot ca. 2 m diep) waterloopjes aanwezig<a href="#fn221" class="footnote-ref" id="fnref221" role="doc-noteref"><sup>221</sup></a>. Dit netwerk van waterloopjes waterde vermoedelijk af naar het meer open water in het oosten van de depressie. Het natuurwetenschappelijk en dateringsonderzoek op enkele van deze geultjes tonen aan dat deze geultjes nagenoeg gelijklopend met de oostelijke meersedimenten werden opgevuld.</p>
@@ -1090,19 +1121,19 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-80" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image101.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.80: Detailbeeld van het DHM van het westelijke deel van de Moervaartdepressie. De laatglaciale meanderende loop en enkele ruggen zijn hierop zichtbaar.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.80: Detailbeeld van het DHM van het westelijke deel van de Moervaartdepressie. De laatglaciale meanderende loop en enkele ruggen zijn hierop zichtbaar.</figcaption>
 </figure>
 </div>
 <div id="fig-2-81" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image102.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.81: Resultaten van geofysisch onderzoek in westelijk deel van de Moervaartdepressie, in functie van landschappelijk onderzoek<a href="#fn224" class="footnote-ref" id="fnref224" role="doc-noteref"><sup>224</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.81: Resultaten van geofysisch onderzoek in westelijk deel van de Moervaartdepressie, in functie van landschappelijk onderzoek<a href="#fn224" class="footnote-ref" id="fnref224" role="doc-noteref"><sup>224</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-82" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image103.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.82: Westelijke deel van de Moervaartdepressie op DHM, met scans van geofysisch onderzoek, locatie van landschappelijke boringen, en de reconstructie van de voornaamste geomorfologische elementen<a href="#fn225" class="footnote-ref" id="fnref225" role="doc-noteref"><sup>225</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.82: Westelijke deel van de Moervaartdepressie op DHM, met scans van geofysisch onderzoek, locatie van landschappelijke boringen, en de reconstructie van de voornaamste geomorfologische elementen<a href="#fn225" class="footnote-ref" id="fnref225" role="doc-noteref"><sup>225</sup></a>.</figcaption>
 </figure>
 </div>
 <p>De noordelijke rand van de Moervaartdepressie wordt gevormd door de dekzandrug Maldegem-Stekene. Recent onderzoek hier door de UGent toont aan dat hier in het laatglaciaal, en zowel in de Allerød als de Jonge Dryas periodes, nog belangrijke verstuivingen plaats vonden<a href="#fn226" class="footnote-ref" id="fnref226" role="doc-noteref"><sup>226</sup></a>. Dit heeft zelfs tot gevolg dat deze noordelijke rand tot 100 meter naar het zuiden opschoof, en dat dus deze herwerkte dekzanden een deel van de Moervaartdepressie afdekken. Deze complexe situatie betekent dat op deze noordelijke rand enerzijds in de zanden verschillende niveaus met archeologische sites kunnen aanwezig zijn, anderzijds dat deze noordelijke rand nog potentieel archeologische sites en ecologische sequenties van de Moervaatdepressie afdekt. Deze noordelijke rand van de depressie heeft, ook al gezien de veel gekende prehistorische sites hier, een bijzonder groot potentieel voor de aanwezigheid van sites uit het finaalpaleolithicum en in mindere mate het mesolithicum. Met name de hoge concentratie aan finaalpaleolithische <em>Federmesser</em> vindplaatsen is opvallend<a href="#fn227" class="footnote-ref" id="fnref227" role="doc-noteref"><sup>227</sup></a>. In het mesolithicum vond de meeste occupatie in het gebied plaats langs de fossiele waterloop van de Kale/Durme. In 2012 werd een benen werktuig uit het mesolithicum aangetroffen te Klein-Sinaai, dat zich bevond in de meersedimenten. Radiokoolstofdateringen wijzen er op dat dit werktuig te situeren is in de eerste helft van het 8ste millennium vóór Christus<a href="#fn228" class="footnote-ref" id="fnref228" role="doc-noteref"><sup>228</sup></a>.</p>
@@ -1113,7 +1144,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-83" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image104.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.83: Bekken van de Mark op het DHM Vlaanderen, met weergave van waterlopen en bestudeerde paleoecologische sequenties.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.83: Bekken van de Mark op het DHM Vlaanderen, met weergave van waterlopen en bestudeerde paleoecologische sequenties.</figcaption>
 </figure>
 </div>
 <p>Het Markbekken kan opgedeeld worden in een ‘boven’ en ‘beneden’ gedeelte. Met het bovengedeelte bedoelen we hier het dendritisch patroon van kleine waterlopen en smalle valleien op de Kempense cuesta, in hoofdzaak tot aan de samenvloeiing van de Keurschotsebeek en de westelijke Mark enkele honderden meter ten zuiden van Wortel. Het benedengedeelte is het gedeelte van de vallei vanaf deze samenvloeiing, waarna de Markvallei in het lager geleden dekzandlandschap zijn overwegend noordelijke oriëntatie aanneemt, en een veel bredere valleivloer kent. Dit is eveneens het punt waar de holocene opvulling van de vallei zijn grootste dikte bereikt, een dikte die in stroomafwaartse zin vanaf dan ongeveer gelijk blijft, conform de vlakke dalbodem die de vallei vanaf deze locatie kenmerkt<a href="#fn230" class="footnote-ref" id="fnref230" role="doc-noteref"><sup>230</sup></a>.</p>
@@ -1128,7 +1159,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-84" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image105.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.84: Vallei van de Mark met uitgesproken steilrand ter hoogte van Wortel.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.84: Vallei van de Mark met uitgesproken steilrand ter hoogte van Wortel.</figcaption>
 </figure>
 </div>
 <p>Voornamelijk in de bovenlopen hebben zich door laatglaciale eolische activiteit plaatselijk duinen dwars op de vallei gevormd, die lokaal obstructies vormden. De meanderende waterlopen zijn hierdoor hetzij omgeleid, of hebben zich plaatselijk ook door deze duinen gewerkt. Hier en daar ontstonden door deze ‘afdammingen’ langs de waterlopen depressies en vennen. Verschillende van dergelijke depressies zijn te vinden in het gebied, o.a. langs de ‘Moerkensloop’. De basis van deze depressies is dikwijls opgevuld met gyttja in het laatglaciaal<a href="#fn256" class="footnote-ref" id="fnref256" role="doc-noteref"><sup>256</sup></a>.</p>
@@ -1153,55 +1184,55 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-85" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image106.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.85: Schematische weergave discrete artefactenclusters op de site van Kerkhove-Stuw<a href="#fn266" class="footnote-ref" id="fnref266" role="doc-noteref"><sup>266</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.85: Schematische weergave discrete artefactenclusters op de site van Kerkhove-Stuw<a href="#fn266" class="footnote-ref" id="fnref266" role="doc-noteref"><sup>266</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-86" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image107.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.86: Overzicht van de ‘oeverzone’ in de opgraving van de site Bazel-Sluis werkput 2<a href="#fn267" class="footnote-ref" id="fnref267" role="doc-noteref"><sup>267</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.86: Overzicht van de ‘oeverzone’ in de opgraving van de site Bazel-Sluis werkput 2<a href="#fn267" class="footnote-ref" id="fnref267" role="doc-noteref"><sup>267</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-87" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image108.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.87: Transect op de oever (dump) zone Bazel-Sluis, werkput 2. De top van het veen wordt gekenmerkt door een grillige bovengrens door ‘trampling’. Met paleo-ecologische monstername van een gedeelte van de sedimenten<a href="#fn268" class="footnote-ref" id="fnref268" role="doc-noteref"><sup>268</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.87: Transect op de oever (dump) zone Bazel-Sluis, werkput 2. De top van het veen wordt gekenmerkt door een grillige bovengrens door ‘trampling’. Met paleo-ecologische monstername van een gedeelte van de sedimenten<a href="#fn268" class="footnote-ref" id="fnref268" role="doc-noteref"><sup>268</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-88" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image109.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.88: Trampling sporen in de oeverzone van site Bazel-Sluis werkput 2.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.88: Trampling sporen in de oeverzone van site Bazel-Sluis werkput 2.</figcaption>
 </figure>
 </div>
 <div id="fig-2-89" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-2-89.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.89: Faunaresten (boven) en werktuigen (onder) uit gewei en been, opgegraven te Bazel-Sluis<a href="#fn269" class="footnote-ref" id="fnref269" role="doc-noteref"><sup>269</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.89: Faunaresten (boven) en werktuigen (onder) uit gewei en been, opgegraven te Bazel-Sluis<a href="#fn269" class="footnote-ref" id="fnref269" role="doc-noteref"><sup>269</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-90" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image114.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.90: Pakket van rivierafzettingen aan de basis van de evaluatieopgraving te Zennegat<a href="#fn270" class="footnote-ref" id="fnref270" role="doc-noteref"><sup>270</sup></a>. In dit pakket, opgebouwd aan de oever van de toenmalige rivier, bleef organisch materiaal bewaard (bot, zaden en vruchten)</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.90: Pakket van rivierafzettingen aan de basis van de evaluatieopgraving te Zennegat<a href="#fn270" class="footnote-ref" id="fnref270" role="doc-noteref"><sup>270</sup></a>. In dit pakket, opgebouwd aan de oever van de toenmalige rivier, bleef organisch materiaal bewaard (bot, zaden en vruchten)</figcaption>
 </figure>
 </div>
 <div id="fig-2-91" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image115.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.91: Coupe op de oeverwal en aangrenzende oeverzone met locaties monsternames (gaten in het profiel) te Kerkhove-Stuw<a href="#fn271" class="footnote-ref" id="fnref271" role="doc-noteref"><sup>271</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.91: Coupe op de oeverwal en aangrenzende oeverzone met locaties monsternames (gaten in het profiel) te Kerkhove-Stuw<a href="#fn271" class="footnote-ref" id="fnref271" role="doc-noteref"><sup>271</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-92" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image116.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.92: Eén van de visfuiken van Bergschenhoek tijdens opgraving (Nederland)<a href="#fn272" class="footnote-ref" id="fnref272" role="doc-noteref"><sup>272</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.92: Eén van de visfuiken van Bergschenhoek tijdens opgraving (Nederland)<a href="#fn272" class="footnote-ref" id="fnref272" role="doc-noteref"><sup>272</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-93" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-2-93.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.93: Kano van Hardinxveld tijdens opgraving en na conservatie<a href="#fn273" class="footnote-ref" id="fnref273" role="doc-noteref"><sup>273</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.93: Kano van Hardinxveld tijdens opgraving en na conservatie<a href="#fn273" class="footnote-ref" id="fnref273" role="doc-noteref"><sup>273</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1213,7 +1244,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-94" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image119.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.94: Aanduiding van de archeoregio zandleem- en leemstreek (bruin), de verspreiding van de lössbodems (gearceerd), rivier- en poldergebonden alluviale zones (blauw), en gekende sites uit finaalpaleolithicum en mesolithicum op basis van de CAI.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.94: Aanduiding van de archeoregio zandleem- en leemstreek (bruin), de verspreiding van de lössbodems (gearceerd), rivier- en poldergebonden alluviale zones (blauw), en gekende sites uit finaalpaleolithicum en mesolithicum op basis van de CAI.</figcaption>
 </figure>
 </div>
 <p>In de Zandleem- en Leemstreek zijn relatief weinig sites gekend uit het finaalpaleolithicum en mesolithicum<a href="#fn274" class="footnote-ref" id="fnref274" role="doc-noteref"><sup>274</sup></a> (<a href="#fig-2-94">fig.&nbsp;<span>2.94</span></a>). Het overgrote gedeelte van de gekende sites situeert zich op de tertiaire heuvelruggen van het Hageland, die intensief werden geprospecteerd door een aantal amateurarcheologen. Het resultaat hiervan werd gebundeld in het proefschrift van P. Vermeersch<a href="#fn275" class="footnote-ref" id="fnref275" role="doc-noteref"><sup>275</sup></a>. Ook op andere tertiaire heuvelruggen zijn sites gekend, zoals bijvoorbeeld te Ronse-Muziekberg<a href="#fn276" class="footnote-ref" id="fnref276" role="doc-noteref"><sup>276</sup></a>.</p>
@@ -1239,7 +1270,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-95" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image120.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.95: De tertiaire heuvelruggen van het Hageland op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.95: De tertiaire heuvelruggen van het Hageland op een hillshade verwerking van het Digitaal Hoogtemodel Vlaanderen.</figcaption>
 </figure>
 </div>
 <p>De Vlaamse Ardennen, een serie getuigenheuvels van Noord-Frankrijk tot Kester, met onder andere de Kemmelberg, Koppenberg en Kesselberg, vertonen een gelijkaardig archeologisch potentieel. Ook hier zijn oppervlaktevondsten gekend uit het middenpaleolithicum, en vondsten en sites uit andere periodes van de steentijd, van finaalpaleolithicum tot neolithicum (bijv. op de Muziekberg, Patersberg en Kemmelberg). Recent wordt beargumenteerd dat de genese van de Hagelandse heuvels verschilt van deze van de Vlaamse Ardennen, maar dat is verder niet relevant voor het archeologisch potentieel<a href="#fn290" class="footnote-ref" id="fnref290" role="doc-noteref"><sup>290</sup></a>.</p>
@@ -1251,19 +1282,19 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-96" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image121.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.96: Verspreiding van de lössgordel in Europa<a href="#fn291" class="footnote-ref" id="fnref291" role="doc-noteref"><sup>291</sup></a></figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.96: Verspreiding van de lössgordel in Europa<a href="#fn291" class="footnote-ref" id="fnref291" role="doc-noteref"><sup>291</sup></a></figcaption>
 </figure>
 </div>
 <div id="fig-2-97" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image122.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.97: Lithostratigraphische eenheden van de Belgische lössgordel<a href="#fn292" class="footnote-ref" id="fnref292" role="doc-noteref"><sup>292</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.97: Lithostratigraphische eenheden van de Belgische lössgordel<a href="#fn292" class="footnote-ref" id="fnref292" role="doc-noteref"><sup>292</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-98" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image123.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.98: Deze zuidwest/noordoost sectie van Lafelt to Veldwezelt toont de relatie tussen de verschilden leden van de Veldwezelt Formatie, van het middenpleistoceen, over de laatste tussenijstijd (Eemiaan) tot het vroege Weichseliaan<a href="#fn293" class="footnote-ref" id="fnref293" role="doc-noteref"><sup>293</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.98: Deze zuidwest/noordoost sectie van Lafelt to Veldwezelt toont de relatie tussen de verschilden leden van de Veldwezelt Formatie, van het middenpleistoceen, over de laatste tussenijstijd (Eemiaan) tot het vroege Weichseliaan<a href="#fn293" class="footnote-ref" id="fnref293" role="doc-noteref"><sup>293</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1274,7 +1305,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-99" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image124.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.99: Schematische weergave van de evolutie van de bodemvorming in lössgronden op plateauposities, vanaf het laatglaciaal<a href="#fn295" class="footnote-ref" id="fnref295" role="doc-noteref"><sup>295</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.99: Schematische weergave van de evolutie van de bodemvorming in lössgronden op plateauposities, vanaf het laatglaciaal<a href="#fn295" class="footnote-ref" id="fnref295" role="doc-noteref"><sup>295</sup></a>.</figcaption>
 </figure>
 </div>
 <p>In de gebieden onder landbouw bieden de bodems, en dan ook de profielontwikkelingsklassen op de bodemkaart, een ander beeld. Op de plateaus zijn dit doorgaans droge leembodems met een textuur-B-horizont en een relatief dikke A-horizont (bodemserie Aba0), op zachte hellingen droge leembodems met een textuur B-horizont en een dunne A-horizont (&lt;40 cm)(bodemserie Aba1), en op zachte hellingen droge leembodems met een textuur B-horizont en een dunne A-horizont (&lt;40 cm)(bodemserie Aba1). Langsheen steile hellingen kan de Bt-horizont afwezig zijn en komen droge leembodems met een bruine B-horizont (bodemserie Abb) voor. In de valleien zijn bodems dikwijls ontwikkeld op colluviale sedimenten: droge tot matig gleyige leembodems zonder duidelijke B-horizont en zonder profielontwikkeling (bodemseries Abp tot Adp). Onder deze colluviale gronden kunnen de oorspronkelijke profielen bedolven liggen onder dit colluvium dat plaatselijk tot verschillende meter dik kan zijn<a href="#fn296" class="footnote-ref" id="fnref296" role="doc-noteref"><sup>296</sup></a> (<a href="#fig-2-100">fig.&nbsp;<span>2.100</span></a>).</p>
@@ -1284,7 +1315,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-100" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image125.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.100: Oorspronkelijke leembodem bedolven onder een pakket colluvium.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.100: Oorspronkelijke leembodem bedolven onder een pakket colluvium.</figcaption>
 </figure>
 </div>
 <p>Het in kaart brengen van deze mate van erosie is uiteraard belangrijk voor de inschatting van het bewaringspotentieel van archeologische sites uit de finaalpaleolithicum en mesolithicum. Hiervoor kunnen in eerste instantie de erosiekaarten gebruikt worden die werden opgemaakt door de KULeuven<a href="#fn303" class="footnote-ref" id="fnref303" role="doc-noteref"><sup>303</sup></a>. In verschillende testprojecten bleken reeds de mogelijkheden voor het gebruik van deze modellering voor de evaluatie van archeologische sites en zones<a href="#fn304" class="footnote-ref" id="fnref304" role="doc-noteref"><sup>304</sup></a>. Gecombineerd met deze modellering kunnen luchtfoto’s gebruikt worden in functie van indicaties van recente erosie<a href="#fn305" class="footnote-ref" id="fnref305" role="doc-noteref"><sup>305</sup></a>.</p>
@@ -1294,7 +1325,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-101" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image126.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.101: Deze wand van een leemgroeve te Kesselt toont meerdere afgedekte paleobodems. De grijze banden zijn gelic gleysols, bodems die zich vormden bij permafrost omstandigheden (© Eenheid Prehistorische Archeologie, KU Leuven).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.101: Deze wand van een leemgroeve te Kesselt toont meerdere afgedekte paleobodems. De grijze banden zijn gelic gleysols, bodems die zich vormden bij permafrost omstandigheden (© Eenheid Prehistorische Archeologie, KU Leuven).</figcaption>
 </figure>
 </div>
 </section>
@@ -1313,13 +1344,13 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-102" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image127.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.102: Steentijdsites in de regio op basis van de CAI, met aanduiding van de contouren van de verschillende archeoregio’s.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.102: Steentijdsites in de regio op basis van de CAI, met aanduiding van de contouren van de verschillende archeoregio’s.</figcaption>
 </figure>
 </div>
 <div id="fig-2-103" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image128.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.103: De locaties van de sites Brugge Landslag Oost 2 (CAI 152699), Koolkerke Arendstraat (CAI 220038), en Dudzele Zonnebloemweg (CAI 165810) geprojecteerd op een grijsschaalverwerking van het DHMV2.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.103: De locaties van de sites Brugge Landslag Oost 2 (CAI 152699), Koolkerke Arendstraat (CAI 220038), en Dudzele Zonnebloemweg (CAI 165810) geprojecteerd op een grijsschaalverwerking van het DHMV2.</figcaption>
 </figure>
 </div>
 </section>
@@ -1331,31 +1362,31 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-104" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image129.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.104: Reconstructie van het landschap van een deel van de kustvlakte in de periode van de bronstijd (© Raakvlak).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.104: Reconstructie van het landschap van een deel van de kustvlakte in de periode van de bronstijd (© Raakvlak).</figcaption>
 </figure>
 </div>
 <div id="fig-2-105" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image130.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.105: Reconstructie van het landschap van een deel van de kustvlakte in de periode van de ijzertijd (© Raakvlak).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.105: Reconstructie van het landschap van een deel van de kustvlakte in de periode van de ijzertijd (© Raakvlak).</figcaption>
 </figure>
 </div>
 <div id="fig-2-106" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image131.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.106: DHMV van de kustvlakte (grijswaardenschaal tussen 2,2 en 6,2m TAW).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.106: DHMV van de kustvlakte (grijswaardenschaal tussen 2,2 en 6,2m TAW).</figcaption>
 </figure>
 </div>
 <div id="fig-2-107" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image132.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.107: Geomorfologische kaart van het kaartblad Oostende<a href="#fn323" class="footnote-ref" id="fnref323" role="doc-noteref"><sup>323</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.107: Geomorfologische kaart van het kaartblad Oostende<a href="#fn323" class="footnote-ref" id="fnref323" role="doc-noteref"><sup>323</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-108" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image133.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.108: Uittrekksel uit de bodemkaart met aanduiding van de ‘kreekruggronden’ (lichtblauw) en ’overdekt Pleistocene gronden (paars). Vergelijk met <a href="#fig-2-107">fig.&nbsp;<span>2.107</span></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.108: Uittrekksel uit de bodemkaart met aanduiding van de ‘kreekruggronden’ (lichtblauw) en ’overdekt Pleistocene gronden (paars). Vergelijk met <a href="#fig-2-107">fig.&nbsp;<span>2.107</span></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1378,7 +1409,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-109" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image134.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.109: Profielsleuven doorheen de lagere delen van het dekzandreliëf op de opgravingssite van Beveren-Logistiek Park Waasland West. De profielen tonen een door veen en alluviale afzettingen bedekt dekzandlanschap<a href="#fn343" class="footnote-ref" id="fnref343" role="doc-noteref"><sup>343</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.109: Profielsleuven doorheen de lagere delen van het dekzandreliëf op de opgravingssite van Beveren-Logistiek Park Waasland West. De profielen tonen een door veen en alluviale afzettingen bedekt dekzandlanschap<a href="#fn343" class="footnote-ref" id="fnref343" role="doc-noteref"><sup>343</sup></a>.</figcaption>
 </figure>
 </div>
 <p>Zoals hogerop al werd gesteld bestaat de ondergrond van de Scheldepolders grotendeels uit dekzandformaties, die zijn afgedekt door holocene sedimenten<a href="#fn344" class="footnote-ref" id="fnref344" role="doc-noteref"><sup>344</sup></a>. Deze eolische zanden dateren uit het pleni- en laatglaciaal, analoog aan de situatie in de Zandstreek en Kempen (zie 2.4.1.2.2). Lokaal komen laatglaciale/vroegholocene fluviatiele afzettingen voor (kronkelwaardafzettingen) van een meanderend riviersysteem. In veel zones worden deze formaties afgedekt door veen geaccumuleerd in een moerasomgeving, daterend uit het holoceen, dat in dikte kan variëren van slechts een dun laagje van enkele centimeters tot ca. 6 m in de lagere delen van het pleistocene reliëf (<a href="#fig-2-109">fig.&nbsp;<span>2.109</span></a>). Vanaf het middenholoceen (vanaf ca. 6000 BP) kwam het noordoostelijke deel van de Waaslandse Scheldepolders onder mariene invloed, waardoor een estuarien getijdenlandschap ontstond. De sedimenten van deze ontwikkeling (hoofdzakelijk grijze tot zwarte kleien) overdekken er in het algemeen het veen, en hebben plaatselijk de top van dit veen opgeruimd. Over het hele gebied komen sequenties van laatholocene estuariene zandige en kleiige afzettingen voor, afgezet in een getijdenlandschap<a href="#fn345" class="footnote-ref" id="fnref345" role="doc-noteref"><sup>345</sup></a>. Deze afzettingen zijn zeer variabel, zowel in voorkomen als in dikte (variërend van enkele centimeters tot ca. 10 m). De meest recente afzettingen zijn postmiddeleeuwse alluviale hoofdzakelijk kleiige afzettingen.</p>
@@ -1408,49 +1439,49 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-110" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image135.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.110: Afbakening van het Maasdal op basis van de overlay van de ‘morfogenetische kaart van het Maasdal’.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.110: Afbakening van het Maasdal op basis van de overlay van de ‘morfogenetische kaart van het Maasdal’.</figcaption>
 </figure>
 </div>
 <div id="fig-2-111" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/fig-2-111.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.111: De geomorfologische kaarten van Paulissen (1973).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.111: De geomorfologische kaarten van Paulissen (1973).</figcaption>
 </figure>
 </div>
 <div id="fig-2-112" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image138.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.112: De ‘morfogenetische kaart van het Maasdal’ (de bestanden hiervan zijn beschikbaar via <a href="https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:77585" class="uri">https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:77585</a>).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.112: De ‘morfogenetische kaart van het Maasdal’ (de bestanden hiervan zijn beschikbaar via <a href="https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:77585" class="uri">https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:77585</a>).</figcaption>
 </figure>
 </div>
 <div id="fig-2-113" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image139.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.113: Algemene datering van de verschillende pleistocene terrassen en holocene afzettingen op Vlaams grondgebied naar de morfogenetische kaart van het Maasdal.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.113: Algemene datering van de verschillende pleistocene terrassen en holocene afzettingen op Vlaams grondgebied naar de morfogenetische kaart van het Maasdal.</figcaption>
 </figure>
 </div>
 <div id="fig-2-114" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image140.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.114: Op het Digitaal hoogtemodel zijn de brede fossiele geulen in het noordelijk deel van het terras van Maasmechelen duidelijk herkenbaar.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.114: Op het Digitaal hoogtemodel zijn de brede fossiele geulen in het noordelijk deel van het terras van Maasmechelen duidelijk herkenbaar.</figcaption>
 </figure>
 </div>
 <div id="fig-2-115" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image141.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.115: Paraboolduinen op het terras van Eisen-Lanklaar in het natuurreservaat ‘Onder de Berg’ te Maasmechelen (0,25 m multidirectionele hillshade verwerking DHM2).</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.115: Paraboolduinen op het terras van Eisen-Lanklaar in het natuurreservaat ‘Onder de Berg’ te Maasmechelen (0,25 m multidirectionele hillshade verwerking DHM2).</figcaption>
 </figure>
 </div>
 <div id="fig-2-116" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image142.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.116: Paleogeografische kaart van de grindwinningszone Elerweerd<a href="#fn351" class="footnote-ref" id="fnref351" role="doc-noteref"><sup>351</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.116: Paleogeografische kaart van de grindwinningszone Elerweerd<a href="#fn351" class="footnote-ref" id="fnref351" role="doc-noteref"><sup>351</sup></a>.</figcaption>
 </figure>
 </div>
 <div id="fig-2-117" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image143.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.117: Referentieprofiel van de vulling van een restgeul, met aanwezigheid van de verschillende alluviale afzettingen in het ontginningsgebied Elerweerd<a href="#fn352" class="footnote-ref" id="fnref352" role="doc-noteref"><sup>352</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.117: Referentieprofiel van de vulling van een restgeul, met aanwezigheid van de verschillende alluviale afzettingen in het ontginningsgebied Elerweerd<a href="#fn352" class="footnote-ref" id="fnref352" role="doc-noteref"><sup>352</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1471,7 +1502,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-118" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image144.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.118: Op basis van vergelijkingen tussen historische kaarten kunnen de recente ontwikkelingen van de rivierlopen in het Maasdal gereconstrueerd worden<a href="#fn356" class="footnote-ref" id="fnref356" role="doc-noteref"><sup>356</sup></a>.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.118: Op basis van vergelijkingen tussen historische kaarten kunnen de recente ontwikkelingen van de rivierlopen in het Maasdal gereconstrueerd worden<a href="#fn356" class="footnote-ref" id="fnref356" role="doc-noteref"><sup>356</sup></a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -1500,7 +1531,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-119" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image145.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.119: Plot van gekende steentijdsites en -vondsten (op basis van de CAI) op de morfogenetische kaart van het Maasdal.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.119: Plot van gekende steentijdsites en -vondsten (op basis van de CAI) op de morfogenetische kaart van het Maasdal.</figcaption>
 </figure>
 </div>
 <p>Het recente onderzoek in de ontginningszone Elerweerd duidt op het belang van de tafonomische processen die dit landschap gevormd hebben, met een potentieel op de aanwezigheid van steentijdsites op de top van de ‘oude klei’, maar ook met grote delen van het landschap waar het potentieel door latere erosie is opgeruimd. In die laatste zones hebben de dieper ingesneden fossiele geulen en de randen daarvan nog wel enig potentieel, zowel voor de aanwezigheid van sites als voor paleolandschappelijk onderzoek van de geulvullingen. Zoals in Nederland te Well-Aijen en Ooijen- Wanssum kunnen we ook bij ons vermoeden dat de vroegholocene (kronkelwaard-)afzettingen ook diverse niveaus met een potentieel voor steentijdsites kunnen bezitten.</p>
@@ -1522,7 +1553,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-120" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image146.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.120: Gekende vindplaatsen (op basis van de CAI) van het vroeg- en middenpaleolithicum, geprojecteerd op enerzijds de spreiding van de leemgronden (bruin), anderzijds de isospachen van de formaties van Rozebeke, Kruishoutem, Meulebeke, Melle, Adegem, Oostwinkel, Eeklo, Oostende en Herzeele, die de verspreiding van de afzettingen van de ‘Vlaamse vallei’ aanduiden.</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.120: Gekende vindplaatsen (op basis van de CAI) van het vroeg- en middenpaleolithicum, geprojecteerd op enerzijds de spreiding van de leemgronden (bruin), anderzijds de isospachen van de formaties van Rozebeke, Kruishoutem, Meulebeke, Melle, Adegem, Oostwinkel, Eeklo, Oostende en Herzeele, die de verspreiding van de afzettingen van de ‘Vlaamse vallei’ aanduiden.</figcaption>
 </figure>
 </div>
 <p>Ten noorden van de Vlaamse Vallei, ter hoogte van de Kempen, kenmerken sites zich vooral aan de hand van oppervlaktevindplaatsen met een beperkt aantal vondsten. Onderzoek in het gebied van de Liereman heeft echter ook voor dat gebied het potentieel aangetoond voor beter bewaarde, afgedekte vindplaatsen<a href="#fn381" class="footnote-ref" id="fnref381" role="doc-noteref"><sup>381</sup></a>.</p>
@@ -1537,7 +1568,7 @@ gtag('config', 'G-WFNTWBH9Q4', { 'anonymize_ip': true});
 <div id="fig-2-121" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./figuren/image147.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figuur&nbsp;2.121: Afwateringsrichtingen in het Scheldebekken (uit Kiden &amp; Verbruggen 2001: 12). 1: Afwateringsrichting vanaf het laattertiair tot het middenpleistoceen 2: Afwateringsrichting van het Saalien tot het einde van het Weichselien 3: Afwateringsrichting vanaf het einde van het Weichselien 4: Vlaamse Vallei</figcaption><p></p>
+<figcaption class="figure-caption">Figuur&nbsp;2.121: Afwateringsrichtingen in het Scheldebekken (uit Kiden &amp; Verbruggen 2001: 12). 1: Afwateringsrichting vanaf het laattertiair tot het middenpleistoceen 2: Afwateringsrichting van het Saalien tot het einde van het Weichselien 3: Afwateringsrichting vanaf het einde van het Weichselien 4: Vlaamse Vallei</figcaption>
 </figure>
 </div>
 <p>De verspreiding en dikte van de sedimenten van de Vlaamse vallei zijn op geologische wijze in kaart gebracht via het bestand van de isospachen van de formaties van Rozebeke, Kruishoutem, Meulebeke, Melle, Adegem, Oostwinkel, Eeklo, Oostende en Herzeele (<a href="#fig-2-120">fig.&nbsp;<span>2.120</span></a>), dat beschikbaar is via de wfs <em>service</em> van Databank Ondergrond Vlaanderen. We moeten hierbij de kanttekening maken dat dit bestand zowel wat betreft het voorkomen als dikte deze kartering niet geheel correct is, ze moet eerder als een indicatieve kaart gezien worden<a href="#fn397" class="footnote-ref" id="fnref397" role="doc-noteref"><sup>397</sup></a>.</p>
@@ -2116,9 +2147,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -2183,6 +2228,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -2226,7 +2357,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
